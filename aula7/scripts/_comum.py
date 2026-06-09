@@ -6,7 +6,6 @@ Stack: Haystack + Ollama (embeddings) + Groq (LLM) + OpenSearch (vetores) +
 LangFuse (observabilidade no chat).
 
 Corpus/indice: REUSA os acordaos do TCU (mesmo conteudo do indice 'aula4_hibrido').
-O 01 garante o indice; o 05 gera o benchmark a partir desse corpus.
 
 Voce NAO executa este arquivo diretamente. Ele e importado pelos outros scripts.
 """
@@ -23,10 +22,8 @@ PASTA_AULA7 = PASTA_SCRIPTS.parent
 PASTA_PROJETO = PASTA_AULA7.parent
 PASTA_DATASETS = PASTA_AULA7 / "datasets"
 
-# Indice (reaproveitado) e corpus de origem (TCU da Aula 4)
 INDICE_TCU = os.getenv("AULA7_INDICE", "aula4_hibrido")
 CORPUS_ACORDAOS_AULA4 = PASTA_PROJETO / "aula4" / "datasets" / "corpus_juridico_aula4_v2.json"
-# Benchmark gerado pelo 05 (queries coloquiais + gabarito)
 BENCHMARK = PASTA_DATASETS / "benchmark_gerado.json"
 
 
@@ -79,9 +76,6 @@ def carregar_benchmark():
         return json.load(f)
 
 
-# ---------------------------------------------------------------------------
-# Configuracoes (.env)
-# ---------------------------------------------------------------------------
 def config_ollama():
     return (os.getenv("OLLAMA_BASE_URL", "http://localhost:11434"),
             os.getenv("OLLAMA_EMBED_MODEL", "nomic-embed-text"))
@@ -108,9 +102,6 @@ def dimensao_do_modelo(nome_modelo):
     return DIMENSAO_EMBEDDING.get(nome_modelo.split(":")[0].lower(), 768)
 
 
-# ---------------------------------------------------------------------------
-# Haystack: OpenSearch, embedders, LLM (Groq)
-# ---------------------------------------------------------------------------
 def abrir_store(indice):
     from haystack_integrations.document_stores.opensearch import OpenSearchDocumentStore
 
@@ -140,14 +131,12 @@ def text_embedder():
 def montar_busca(store, top_k):
     """Pipeline simples de busca densa: embedder (Ollama) -> retriever (OpenSearch)."""
     from haystack import Pipeline
-    from haystack_integrations.components.embedders.ollama import OllamaTextEmbedder
     from haystack_integrations.components.retrievers.opensearch import (
         OpenSearchEmbeddingRetriever,
     )
 
-    base_url, modelo = config_ollama()
     pipe = Pipeline()
-    pipe.add_component("embedder", OllamaTextEmbedder(model=modelo, url=base_url))
+    pipe.add_component("embedder", text_embedder())
     pipe.add_component("retriever", OpenSearchEmbeddingRetriever(document_store=store, top_k=top_k))
     pipe.connect("embedder.embedding", "retriever.query_embedding")
     return pipe
@@ -178,8 +167,7 @@ def gerar_variacoes(cliente, modelo, query, n=4):
     prompt = (f"Gere {n} variacoes da pergunta juridica abaixo, com vocabulario diferente "
               f"(sinonimos, termos tecnicos). Uma por linha, sem numeracao.\n\nPergunta: {query}")
     texto = gerar_texto(cliente, modelo, prompt, max_tokens=300, temperature=0.7)
-    variacoes = [v.strip(" -.") for v in texto.splitlines() if v.strip()]
-    return variacoes[:n]
+    return [v.strip(" -.") for v in texto.splitlines() if v.strip()][:n]
 
 
 def gerar_stepback(cliente, modelo, query):
@@ -228,7 +216,7 @@ def fundir_rrf(listas, top_k):
 
 
 def importar_script(nome_arquivo):
-    """Importa um script irmao (nome comeca com numero) como modulo. Usado pelo 05."""
+    """Importa um script irmao (nome comeca com numero) como modulo."""
     caminho = PASTA_SCRIPTS / nome_arquivo
     spec = importlib.util.spec_from_file_location(nome_arquivo.replace(".py", ""), caminho)
     modulo = importlib.util.module_from_spec(spec)

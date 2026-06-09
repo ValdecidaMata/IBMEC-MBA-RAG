@@ -84,10 +84,12 @@ python 05_benchmark.py --gerar               # força regerar o benchmark do mod
 ```
 
 ### `06_chat_langfuse.py` — testa as técnicas com observabilidade
-Para cada pergunta, roda **uma técnica ou todas** (baseline, multi_query, step_back,
-rag_fusion). Cada execução vira um **trace no LangFuse nomeado por técnica**
-(`chat-aula7-<tecnica>`), então a auto-instrumentação captura o comportamento de cada
-uma e você compara lado a lado (latência, tokens, trechos no prompt, resposta).
+Cada técnica é um **pipeline Haystack completo**, incluindo a **reescrita da query**
+(variações/step-back) feita por componentes `OpenAIGenerator` — então a
+auto-instrumentação do LangFuse **captura também essas chamadas de LLM** no mesmo
+trace (não só a geração da resposta). Componentes customizados em `_componentes.py`
+(`MontarConsultas`, `BuscarMultiplas`). Cada técnica gera um trace nomeado
+`chat-aula7-<tecnica>` para comparar lado a lado.
 ```bash
 python 06_chat_langfuse.py                 # roda TODAS as técnicas por pergunta
 python 06_chat_langfuse.py --tecnica rag_fusion
