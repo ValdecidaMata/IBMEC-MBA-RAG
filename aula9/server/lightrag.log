@@ -1,0 +1,500 @@
+2026-06-16 10:42:02,881 - lightrag - INFO - OpenAI LLM Options: {}
+2026-06-16 10:42:02,881 - lightrag - INFO - Ollama Embedding Options: {'num_ctx': 8192}
+2026-06-16 10:42:03,120 - lightrag - INFO - Embedding config: binding=ollama model=bge-m3:latest embedding_dim=1024 max_token_size=8192
+2026-06-16 10:42:03,120 - lightrag - INFO - Send embedding dimension: False by env var (dimensions=1024, has_param=True, binding=ollama)
+2026-06-16 10:42:03,120 - lightrag - INFO - Embedding max_token_size: 8192 (from ollama provider default)
+2026-06-16 10:42:03,122 - lightrag - INFO - Reranking is enabled: jina-reranker-v2-base-multilingual using jina provider
+2026-06-16 10:42:03,878 - lightrag - INFO - [] Created new empty graph file: D:\IBMEC\MBA_RAG_CAG\aula9\server\rag_storage\graph_chunk_entity_relation.graphml
+2026-06-16 10:42:03,880 - lightrag - INFO - Role LLM Configuration (initialized):
+2026-06-16 10:42:03,880 - lightrag - INFO -  - extract: openai/llama-3.3-70b-versatile, host=https://api.groq.com/openai/v1, max_async=4, timeout=240
+2026-06-16 10:42:03,880 - lightrag - INFO -  - keyword: openai/llama-3.3-70b-versatile, host=https://api.groq.com/openai/v1, max_async=4, timeout=240
+2026-06-16 10:42:03,880 - lightrag - INFO -  - query: openai/llama-3.3-70b-versatile, host=https://api.groq.com/openai/v1, max_async=4, timeout=240
+2026-06-16 10:42:03,881 - lightrag - INFO -  - vlm: openai/llama-3.3-70b-versatile, host=https://api.groq.com/openai/v1, max_async=4, timeout=240
+2026-06-16 10:42:03,881 - lightrag - INFO - Role LLM Option:
+2026-06-16 10:42:03,881 - lightrag - INFO -  - extract: OpenAI {}
+2026-06-16 10:42:03,881 - lightrag - INFO -  - keyword: OpenAI {}
+2026-06-16 10:42:03,881 - lightrag - INFO -  - query: OpenAI {}
+2026-06-16 10:42:03,881 - lightrag - INFO -  - vlm: OpenAI {}
+2026-06-16 10:42:03,923 - lightrag - INFO - WebUI assets mounted at /webui
+2026-06-16 10:42:04,474 - uvicorn.error - INFO - Started server process [36832]
+2026-06-16 10:42:04,474 - uvicorn.error - INFO - Waiting for application startup.
+2026-06-16 10:42:04,474 - lightrag - INFO - [] Process 36832 KV load full_docs with 0 records
+2026-06-16 10:42:04,475 - lightrag - INFO - [] Process 36832 KV load text_chunks with 0 records
+2026-06-16 10:42:04,475 - lightrag - INFO - [] Process 36832 KV load full_entities with 0 records
+2026-06-16 10:42:04,475 - lightrag - INFO - [] Process 36832 KV load full_relations with 0 records
+2026-06-16 10:42:04,475 - lightrag - INFO - [] Process 36832 KV load entity_chunks with 0 records
+2026-06-16 10:42:04,475 - lightrag - INFO - [] Process 36832 KV load relation_chunks with 0 records
+2026-06-16 10:42:04,475 - lightrag - INFO - [] Process 36832 KV load llm_response_cache with 0 records
+2026-06-16 10:42:04,476 - lightrag - INFO - [] Process 36832 doc status load doc_status with 0 records
+2026-06-16 10:42:04,476 - uvicorn.error - INFO - Application startup complete.
+2026-06-16 10:42:04,476 - uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:9621 (Press CTRL+C to quit)
+2026-06-16 10:42:22,005 - uvicorn.access - INFO - 127.0.0.1:59165 - "GET / HTTP/1.1" 307
+2026-06-16 10:42:22,146 - uvicorn.access - INFO - 127.0.0.1:59165 - "GET /webui/assets/index-DY7ugOcG.js HTTP/1.1" 200
+2026-06-16 10:42:22,150 - uvicorn.access - INFO - 127.0.0.1:52323 - "GET /webui/assets/chunk-QTnfLwEv.js HTTP/1.1" 200
+2026-06-16 10:42:22,155 - uvicorn.access - INFO - 127.0.0.1:52323 - "GET /webui/assets/index-BbeTmlYc.css HTTP/1.1" 200
+2026-06-16 10:42:22,159 - uvicorn.access - INFO - 127.0.0.1:52323 - "GET /webui/assets/src-DWlNNfc5.js HTTP/1.1" 200
+2026-06-16 10:42:22,170 - uvicorn.access - INFO - 127.0.0.1:52323 - "GET /webui/assets/chunk-CSCIHK7Q-BlqVaTkC.js HTTP/1.1" 200
+2026-06-16 10:42:22,181 - uvicorn.access - INFO - 127.0.0.1:52323 - "GET /webui/assets/dist-BExdoQxQ.js HTTP/1.1" 200
+2026-06-16 10:42:22,184 - uvicorn.access - INFO - 127.0.0.1:60034 - "GET /webui/assets/chunk-5ZQYHXKU-2eBUAI0G.js HTTP/1.1" 200
+2026-06-16 10:42:22,190 - uvicorn.access - INFO - 127.0.0.1:52323 - "GET /webui/assets/chunk-O5CBEL6O-ioerY3BN.js HTTP/1.1" 200
+2026-06-16 10:42:22,191 - uvicorn.access - INFO - 127.0.0.1:60034 - "GET /webui/assets/path-BWPyau1x.js HTTP/1.1" 200
+2026-06-16 10:42:22,199 - uvicorn.access - INFO - 127.0.0.1:52323 - "GET /webui/assets/line-ZB2feH2l.js HTTP/1.1" 200
+2026-06-16 10:42:22,200 - uvicorn.access - INFO - 127.0.0.1:60034 - "GET /webui/assets/array-BifhSqXX.js HTTP/1.1" 200
+2026-06-16 10:42:22,205 - uvicorn.access - INFO - 127.0.0.1:52323 - "GET /webui/assets/chunk-L5ZTLDWV-Bxf8-8w_.js HTTP/1.1" 200
+2026-06-16 10:42:22,206 - uvicorn.access - INFO - 127.0.0.1:60034 - "GET /webui/assets/chunk-NZK2D7GU-ODr3m4Vz.js HTTP/1.1" 200
+2026-06-16 10:42:22,213 - uvicorn.access - INFO - 127.0.0.1:60034 - "GET /webui/assets/rough.esm-CSKSodPl.js HTTP/1.1" 200
+2026-06-16 10:42:22,214 - uvicorn.access - INFO - 127.0.0.1:52323 - "GET /webui/assets/chunk-3OPIFGDE-BaqlDrFB.js HTTP/1.1" 200
+2026-06-16 10:42:22,218 - uvicorn.access - INFO - 127.0.0.1:59165 - "GET /webui/assets/chunk-BSJP7CBP-D8Ua6mpo.js HTTP/1.1" 200
+2026-06-16 10:42:22,531 - uvicorn.access - INFO - 127.0.0.1:59165 - "GET /auth-status HTTP/1.1" 200
+2026-06-16 10:42:22,534 - uvicorn.access - INFO - 127.0.0.1:52323 - "GET /webui/favicon.png HTTP/1.1" 200
+2026-06-16 10:42:23,029 - uvicorn.access - INFO - 127.0.0.1:60034 - "GET /graph/label/popular?limit=300 HTTP/1.1" 200
+2026-06-16 10:42:23,032 - uvicorn.access - INFO - 127.0.0.1:52323 - "GET /docs?theme=light HTTP/1.1" 200
+2026-06-16 10:42:23,033 - lightrag - INFO - [] Subgraph query successful | Node count: 0 | Edge count: 0
+2026-06-16 10:42:23,033 - uvicorn.access - INFO - 127.0.0.1:57336 - "GET /graphs?label=*&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-06-16 10:42:23,051 - uvicorn.access - INFO - 127.0.0.1:59165 - "GET /static/swagger-ui/swagger-ui.css HTTP/1.1" 200
+2026-06-16 10:42:23,052 - uvicorn.access - INFO - 127.0.0.1:57336 - "GET /static/swagger-ui/swagger-ui-bundle.js HTTP/1.1" 200
+2026-06-16 10:42:23,327 - uvicorn.access - INFO - 127.0.0.1:57336 - "GET /openapi.json HTTP/1.1" 200
+2026-06-16 10:42:33,274 - uvicorn.access - INFO - 127.0.0.1:62235 - "POST /documents/scan HTTP/1.1" 200
+2026-06-16 10:42:33,282 - lightrag - INFO - Found 0 files to index.
+2026-06-16 10:42:33,283 - lightrag - INFO - No upload file found, check if there are any documents in the queue...
+2026-06-16 10:42:33,283 - lightrag - INFO - No documents to process
+2026-06-16 11:08:00,533 - uvicorn.access - INFO - 127.0.0.1:51462 - "POST /documents/upload HTTP/1.1" 200
+2026-06-16 11:08:00,537 - lightrag - INFO - [File Extraction]Deferred 05.06.2020_apelacao_ribeira_do_pombal.pdf to legacy parser
+2026-06-16 11:08:00,541 - lightrag - INFO - Processing 1 document(s)
+2026-06-16 11:08:00,546 - lightrag - INFO - Parsing (native): doc-1a1e966345ca2bdd9d76f2d4c1b59ff8
+2026-06-16 11:08:02,037 - lightrag - INFO - Extracting stage 1/1: 05.06.2020_apelacao_ribeira_do_pombal.pdf
+2026-06-16 11:08:02,038 - lightrag - INFO - Processing d-id: doc-1a1e966345ca2bdd9d76f2d4c1b59ff8
+2026-06-16 11:08:02,038 - lightrag - INFO - Chunking F: size=1200, split_only=False, overlap=100, doc_id: doc-1a1e966345ca2bdd9d76f2d4c1b59ff8
+2026-06-16 11:08:02,079 - lightrag - INFO - extract LLM func: 4 new workers initialized (Timeouts: Func: 240s, Worker: 480s, Health Check: 495s)
+2026-06-16 11:08:04,113 - lightrag - ERROR - OpenAI API Call Failed,
+Model: llama-3.3-70b-versatile,
+Params: {'response_format': {'type': 'json_object'}, 'timeout': 240}, Got: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}
+Response body: {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}
+Request ID: req_01kv8c5gwxf708p9z30d1rkbpm
+Request URL: https://api.groq.com/openai/v1/chat/completions
+2026-06-16 11:08:04,115 - lightrag - ERROR - extract LLM func: Error in decorated function for task 2507469323904_498396.609: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}
+2026-06-16 11:08:04,118 - lightrag - ERROR - Failed to extract entities and relationships: C[1/13]: doc-1a1e966345ca2bdd9d76f2d4c1b59ff8-chunk-002: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}
+2026-06-16 11:08:04,146 - lightrag - ERROR - Traceback (most recent call last):
+  File "D:\IBMEC\MBA_RAG_CAG\.venv\Lib\site-packages\lightrag\operate.py", line 3729, in _process_with_semaphore
+    result = await _process_single_content(chunk)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\IBMEC\MBA_RAG_CAG\.venv\Lib\site-packages\lightrag\operate.py", line 3485, in _process_single_content
+    final_result, timestamp = await use_llm_func_with_cache(
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\IBMEC\MBA_RAG_CAG\.venv\Lib\site-packages\lightrag\utils.py", line 3599, in use_llm_func_with_cache
+    res: str = await use_llm_func(
+               ^^^^^^^^^^^^^^^^^^^
+  File "D:\IBMEC\MBA_RAG_CAG\.venv\Lib\site-packages\lightrag\utils.py", line 2175, in wait_func
+    result = await future
+             ^^^^^^^^^^^^
+  File "D:\IBMEC\MBA_RAG_CAG\.venv\Lib\site-packages\lightrag\utils.py", line 1275, in worker
+    result = await asyncio.wait_for(
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rtorn\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "D:\IBMEC\MBA_RAG_CAG\.venv\Lib\site-packages\lightrag\api\lightrag_server.py", line 1852, in role_openai_complete
+    return await openai_complete_if_cache(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\IBMEC\MBA_RAG_CAG\.venv\Lib\site-packages\tenacity\asyncio\__init__.py", line 193, in async_wrapped
+    return await copy(fn, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\IBMEC\MBA_RAG_CAG\.venv\Lib\site-packages\tenacity\asyncio\__init__.py", line 112, in __call__
+    do = await self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\IBMEC\MBA_RAG_CAG\.venv\Lib\site-packages\tenacity\asyncio\__init__.py", line 157, in iter
+    result = await action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\IBMEC\MBA_RAG_CAG\.venv\Lib\site-packages\tenacity\_utils.py", line 111, in inner
+    return call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\IBMEC\MBA_RAG_CAG\.venv\Lib\site-packages\tenacity\__init__.py", line 393, in <lambda>
+    self._add_action_func(lambda rs: rs.outcome.result())
+                                     ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rtorn\AppData\Local\Programs\Python\Python312\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rtorn\AppData\Local\Programs\Python\Python312\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "D:\IBMEC\MBA_RAG_CAG\.venv\Lib\site-packages\tenacity\asyncio\__init__.py", line 116, in __call__
+    result = await fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\IBMEC\MBA_RAG_CAG\.venv\Lib\site-packages\lightrag\llm\openai.py", line 436, in openai_complete_if_cache
+    response = await openai_async_client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\IBMEC\MBA_RAG_CAG\.venv\Lib\site-packages\openai\resources\chat\completions\completions.py", line 2739, in create
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+  File "D:\IBMEC\MBA_RAG_CAG\.venv\Lib\site-packages\openai\_base_client.py", line 1931, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\IBMEC\MBA_RAG_CAG\.venv\Lib\site-packages\openai\_base_client.py", line 1716, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\IBMEC\MBA_RAG_CAG\.venv\Lib\site-packages\lightrag\operate.py", line 3737, in _process_with_semaphore
+    raise prefixed_exception from e
+RuntimeError: doc-1a1e966345ca2bdd9d76f2d4c1b59ff8-chunk-002: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\IBMEC\MBA_RAG_CAG\.venv\Lib\site-packages\lightrag\pipeline.py", line 2475, in process_single_document
+    chunk_results = await entity_relation_task
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\IBMEC\MBA_RAG_CAG\.venv\Lib\site-packages\lightrag\lightrag.py", line 1590, in _process_extract_entities
+    raise e
+  File "D:\IBMEC\MBA_RAG_CAG\.venv\Lib\site-packages\lightrag\lightrag.py", line 1575, in _process_extract_entities
+    chunk_results = await extract_entities(
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\IBMEC\MBA_RAG_CAG\.venv\Lib\site-packages\lightrag\operate.py", line 3779, in extract_entities
+    raise prefixed_exception from first_exception
+RuntimeError: C[1/13]: doc-1a1e966345ca2bdd9d76f2d4c1b59ff8-chunk-002: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}
+
+2026-06-16 11:08:04,147 - lightrag - ERROR - Failed to extract document 1/1: 05.06.2020_apelacao_ribeira_do_pombal.pdf
+2026-06-16 11:08:04,154 - lightrag - ERROR - OpenAI API Call Failed,
+Model: llama-3.3-70b-versatile,
+Params: {'response_format': {'type': 'json_object'}, 'timeout': 240}, Got: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}
+Response body: {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}
+Request ID: req_01kv8c5gxze5hv0mre4vjqs89t
+Request URL: https://api.groq.com/openai/v1/chat/completions
+2026-06-16 11:08:04,155 - lightrag - ERROR - OpenAI API Call Failed,
+Model: llama-3.3-70b-versatile,
+Params: {'response_format': {'type': 'json_object'}, 'timeout': 240}, Got: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}
+Response body: {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}
+Request ID: req_01kv8c5gy0e5ht8fdcv8eehkhp
+Request URL: https://api.groq.com/openai/v1/chat/completions
+2026-06-16 11:08:04,156 - lightrag - ERROR - extract LLM func: Error in decorated function for task 2507469324096_498397.0: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}
+2026-06-16 11:08:04,157 - lightrag - ERROR - extract LLM func: Error in decorated function for task 2507469323520_498395.359: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}
+2026-06-16 11:08:04,160 - lightrag - ERROR - OpenAI API Call Failed,
+Model: llama-3.3-70b-versatile,
+Params: {'response_format': {'type': 'json_object'}, 'timeout': 240}, Got: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}
+Response body: {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}
+Request ID: req_01kv8c5gy4eyb8jx1bdrz95t8g
+Request URL: https://api.groq.com/openai/v1/chat/completions
+2026-06-16 11:08:04,160 - lightrag - ERROR - extract LLM func: Error in decorated function for task 2507469323328_498396.234: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}
+2026-06-16 11:08:04,163 - lightrag - INFO - Enqueued document processing pipeline stopped
+2026-06-16 11:08:54,307 - uvicorn.error - INFO - Shutting down
+2026-06-16 11:08:54,413 - uvicorn.error - INFO - Waiting for application shutdown.
+2026-06-16 11:08:54,414 - lightrag - INFO - [] chunks flush: embedding 13 vectors in 2 batch(es) (batch_num=10)
+2026-06-16 11:08:54,415 - lightrag - INFO - Embedding func: 8 new workers initialized (Timeouts: Func: 30s, Worker: 60s, Health Check: 75s)
+2026-06-16 11:09:19,889 - lightrag - INFO - Successfully finalized 12 storages
+2026-06-16 11:09:19,891 - uvicorn.error - INFO - Application shutdown complete.
+2026-06-16 11:09:19,891 - uvicorn.error - INFO - Finished server process [36832]
+2026-06-16 11:09:30,671 - lightrag - INFO - OpenAI LLM Options: {}
+2026-06-16 11:09:30,672 - lightrag - INFO - Ollama Embedding Options: {'num_ctx': 8192}
+2026-06-16 11:09:30,923 - lightrag - INFO - Embedding config: binding=ollama model=bge-m3:latest embedding_dim=1024 max_token_size=8192
+2026-06-16 11:09:30,924 - lightrag - INFO - Send embedding dimension: False by env var (dimensions=1024, has_param=True, binding=ollama)
+2026-06-16 11:09:30,924 - lightrag - INFO - Embedding max_token_size: 8192 (from ollama provider default)
+2026-06-16 11:09:30,926 - lightrag - INFO - Reranking is enabled: jina-reranker-v2-base-multilingual using jina provider
+2026-06-16 11:09:31,678 - lightrag - INFO - [] Created new empty graph file: D:\IBMEC\MBA_RAG_CAG\aula9\server\rag_storage\graph_chunk_entity_relation.graphml
+2026-06-16 11:09:31,682 - lightrag - INFO - Role LLM Configuration (initialized):
+2026-06-16 11:09:31,682 - lightrag - INFO -  - extract: openai/llama-3.3-70b-versatile, host=https://api.groq.com/openai/v1, max_async=4, timeout=240
+2026-06-16 11:09:31,682 - lightrag - INFO -  - keyword: openai/llama-3.3-70b-versatile, host=https://api.groq.com/openai/v1, max_async=4, timeout=240
+2026-06-16 11:09:31,682 - lightrag - INFO -  - query: openai/llama-3.3-70b-versatile, host=https://api.groq.com/openai/v1, max_async=4, timeout=240
+2026-06-16 11:09:31,682 - lightrag - INFO -  - vlm: openai/llama-3.3-70b-versatile, host=https://api.groq.com/openai/v1, max_async=4, timeout=240
+2026-06-16 11:09:31,682 - lightrag - INFO - Role LLM Option:
+2026-06-16 11:09:31,682 - lightrag - INFO -  - extract: OpenAI {}
+2026-06-16 11:09:31,684 - lightrag - INFO -  - keyword: OpenAI {}
+2026-06-16 11:09:31,684 - lightrag - INFO -  - query: OpenAI {}
+2026-06-16 11:09:31,684 - lightrag - INFO -  - vlm: OpenAI {}
+2026-06-16 11:09:31,721 - lightrag - INFO - WebUI assets mounted at /webui
+2026-06-16 11:09:31,739 - uvicorn.error - INFO - Started server process [26840]
+2026-06-16 11:09:31,739 - uvicorn.error - INFO - Waiting for application startup.
+2026-06-16 11:09:31,740 - lightrag - INFO - [] Process 26840 KV load full_docs with 1 records
+2026-06-16 11:09:31,740 - lightrag - INFO - [] Process 26840 KV load text_chunks with 0 records
+2026-06-16 11:09:31,740 - lightrag - INFO - [] Process 26840 KV load full_entities with 0 records
+2026-06-16 11:09:31,741 - lightrag - INFO - [] Process 26840 KV load full_relations with 0 records
+2026-06-16 11:09:31,741 - lightrag - INFO - [] Process 26840 KV load entity_chunks with 0 records
+2026-06-16 11:09:31,742 - lightrag - INFO - [] Process 26840 KV load relation_chunks with 0 records
+2026-06-16 11:09:31,742 - lightrag - INFO - [] Process 26840 KV load llm_response_cache with 0 records
+2026-06-16 11:09:31,742 - lightrag - INFO - [] Process 26840 doc status load doc_status with 1 records
+2026-06-16 11:09:31,742 - uvicorn.error - INFO - Application startup complete.
+2026-06-16 11:09:31,743 - uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:9621 (Press CTRL+C to quit)
+2026-06-16 11:09:36,835 - uvicorn.access - INFO - 127.0.0.1:64561 - "GET /webui/assets/index-DY7ugOcG.js HTTP/1.1" 304
+2026-06-16 11:09:36,836 - uvicorn.access - INFO - 127.0.0.1:58272 - "GET /webui/assets/chunk-QTnfLwEv.js HTTP/1.1" 304
+2026-06-16 11:09:36,839 - uvicorn.access - INFO - 127.0.0.1:58272 - "GET /webui/assets/src-DWlNNfc5.js HTTP/1.1" 304
+2026-06-16 11:09:36,840 - uvicorn.access - INFO - 127.0.0.1:64561 - "GET /webui/assets/index-BbeTmlYc.css HTTP/1.1" 304
+2026-06-16 11:09:36,844 - uvicorn.access - INFO - 127.0.0.1:64561 - "GET /webui/assets/dist-BExdoQxQ.js HTTP/1.1" 304
+2026-06-16 11:09:36,845 - uvicorn.access - INFO - 127.0.0.1:58272 - "GET /webui/assets/chunk-CSCIHK7Q-BlqVaTkC.js HTTP/1.1" 304
+2026-06-16 11:09:36,848 - uvicorn.access - INFO - 127.0.0.1:58272 - "GET /webui/assets/chunk-O5CBEL6O-ioerY3BN.js HTTP/1.1" 304
+2026-06-16 11:09:36,849 - uvicorn.access - INFO - 127.0.0.1:64561 - "GET /webui/assets/chunk-5ZQYHXKU-2eBUAI0G.js HTTP/1.1" 304
+2026-06-16 11:09:36,852 - uvicorn.access - INFO - 127.0.0.1:58272 - "GET /webui/assets/path-BWPyau1x.js HTTP/1.1" 304
+2026-06-16 11:09:36,852 - uvicorn.access - INFO - 127.0.0.1:64561 - "GET /webui/assets/array-BifhSqXX.js HTTP/1.1" 304
+2026-06-16 11:09:36,855 - uvicorn.access - INFO - 127.0.0.1:64561 - "GET /webui/assets/chunk-L5ZTLDWV-Bxf8-8w_.js HTTP/1.1" 304
+2026-06-16 11:09:36,856 - uvicorn.access - INFO - 127.0.0.1:58272 - "GET /webui/assets/line-ZB2feH2l.js HTTP/1.1" 304
+2026-06-16 11:09:36,862 - uvicorn.access - INFO - 127.0.0.1:64561 - "GET /webui/assets/chunk-NZK2D7GU-ODr3m4Vz.js HTTP/1.1" 304
+2026-06-16 11:09:36,863 - uvicorn.access - INFO - 127.0.0.1:58272 - "GET /webui/assets/rough.esm-CSKSodPl.js HTTP/1.1" 304
+2026-06-16 11:09:36,865 - uvicorn.access - INFO - 127.0.0.1:49506 - "GET /webui/assets/chunk-3OPIFGDE-BaqlDrFB.js HTTP/1.1" 304
+2026-06-16 11:09:36,866 - uvicorn.access - INFO - 127.0.0.1:64561 - "GET /webui/assets/chunk-BSJP7CBP-D8Ua6mpo.js HTTP/1.1" 304
+2026-06-16 11:09:37,344 - uvicorn.access - INFO - 127.0.0.1:64561 - "GET /graph/label/popular?limit=300 HTTP/1.1" 200
+2026-06-16 11:09:37,346 - uvicorn.access - INFO - 127.0.0.1:49506 - "GET /webui/favicon.png HTTP/1.1" 304
+2026-06-16 11:09:37,370 - uvicorn.access - INFO - 127.0.0.1:49506 - "GET /docs?theme=light HTTP/1.1" 200
+2026-06-16 11:09:37,386 - uvicorn.access - INFO - 127.0.0.1:64561 - "GET /static/swagger-ui/swagger-ui.css HTTP/1.1" 304
+2026-06-16 11:09:37,387 - uvicorn.access - INFO - 127.0.0.1:49506 - "GET /static/swagger-ui/swagger-ui-bundle.js HTTP/1.1" 304
+2026-06-16 11:09:37,689 - uvicorn.access - INFO - 127.0.0.1:49506 - "GET /openapi.json HTTP/1.1" 200
+2026-06-16 11:10:04,285 - uvicorn.access - INFO - 127.0.0.1:64759 - "DELETE /documents/delete_document HTTP/1.1" 200
+2026-06-16 11:10:04,286 - lightrag - INFO - Deleting document 1/1: doc-1a1e966345ca2bdd9d76f2d4c1b59ff8
+2026-06-16 11:10:04,286 - lightrag - INFO - Starting deletion process for document doc-1a1e966345ca2bdd9d76f2d4c1b59ff8
+2026-06-16 11:10:04,287 - lightrag - INFO - Deleting doc-1a1e966345ca2bdd9d76f2d4c1b59ff8 05.06.2020_apelacao_ribeira_do_pombal.pdf(previous status: FAILED)
+2026-06-16 11:10:04,287 - lightrag - INFO - No LLM cache entries found for document doc-1a1e966345ca2bdd9d76f2d4c1b59ff8
+2026-06-16 11:10:04,288 - lightrag - INFO - Found 0 affected entities
+2026-06-16 11:10:04,288 - lightrag - INFO - Found 0 affected relations
+2026-06-16 11:10:04,292 - lightrag - INFO - Successfully deleted 13 chunks from storage
+2026-06-16 11:10:04,301 - lightrag - INFO - [] Writing graph with 0 nodes, 0 edges
+2026-06-16 11:10:04,314 - lightrag - INFO - In memory DB persist to disk
+2026-06-16 11:10:04,327 - lightrag - INFO - [] Writing graph with 0 nodes, 0 edges
+2026-06-16 11:10:04,330 - lightrag - INFO - In memory DB persist to disk
+2026-06-16 11:10:04,330 - lightrag - INFO - Document deleted 1/1: doc-1a1e966345ca2bdd9d76f2d4c1b59ff8[05.06.2020_apelacao_ribeira_do_pombal.pdf]
+2026-06-16 11:10:04,334 - lightrag - INFO - Successfully deleted source files: __parsed__\05.06.2020_apelacao_ribeira_do_pombal.pdf
+2026-06-16 11:10:11,218 - uvicorn.access - INFO - 127.0.0.1:64759 - "POST /documents/upload HTTP/1.1" 200
+2026-06-16 11:10:11,224 - lightrag - INFO - [File Extraction]Deferred 05.06.2020_apelacao_ribeira_do_pombal.pdf to legacy parser
+2026-06-16 11:10:11,225 - lightrag - INFO - Processing 1 document(s)
+2026-06-16 11:10:11,229 - lightrag - INFO - Parsing (native): doc-1a1e966345ca2bdd9d76f2d4c1b59ff8
+2026-06-16 11:10:12,794 - lightrag - INFO - Extracting stage 1/1: 05.06.2020_apelacao_ribeira_do_pombal.pdf
+2026-06-16 11:10:12,794 - lightrag - INFO - Processing d-id: doc-1a1e966345ca2bdd9d76f2d4c1b59ff8
+2026-06-16 11:10:12,796 - lightrag - INFO - Chunking F: size=1200, split_only=False, overlap=100, doc_id: doc-1a1e966345ca2bdd9d76f2d4c1b59ff8
+2026-06-16 11:10:12,860 - lightrag - INFO - extract LLM func: 4 new workers initialized (Timeouts: Func: 240s, Worker: 480s, Health Check: 495s)
+2026-06-16 11:10:17,806 - lightrag - INFO -  == LLM cache == saving: default:extract:aebc63fa801e7efa5236b3649767621b
+2026-06-16 11:10:18,396 - lightrag - INFO -  == LLM cache == saving: default:extract:cb342f0b1d68d92770713227d6786c57
+2026-06-16 11:10:18,705 - lightrag - INFO -  == LLM cache == saving: default:extract:4f26873e8c936d94f0b9df4a52b9007e
+2026-06-16 11:10:20,269 - lightrag - INFO -  == LLM cache == saving: default:extract:8f32e181ab1c643d4688ab3cf6ed20c3
+2026-06-16 11:10:20,270 - lightrag - INFO - Chunk 1 of 13 extracted 12 Ent + 5 Rel doc-1a1e966345ca2bdd9d76f2d4c1b59ff8-chunk-002
+2026-06-16 11:10:20,443 - lightrag - INFO -  == LLM cache == saving: default:extract:e745272da7c02138940cd6c8e009f788
+2026-06-16 11:10:20,443 - lightrag - INFO -  == LLM cache == saving: default:extract:e367865d6ac6a92a5fabbf65687f804f
+2026-06-16 11:10:20,636 - lightrag - INFO - Chunk 2 of 13 extracted 18 Ent + 9 Rel doc-1a1e966345ca2bdd9d76f2d4c1b59ff8-chunk-001
+2026-06-16 11:10:21,347 - lightrag - INFO -  == LLM cache == saving: default:extract:f38390acd437f75e93248e9d1a98f159
+2026-06-16 11:10:21,348 - lightrag - INFO - Chunk 3 of 13 extracted 14 Ent + 9 Rel doc-1a1e966345ca2bdd9d76f2d4c1b59ff8-chunk-000
+2026-06-16 11:10:23,321 - lightrag - INFO -  == LLM cache == saving: default:extract:90e218443bf35dd69fed62380fa236fa
+2026-06-16 11:10:23,323 - lightrag - INFO - Chunk 4 of 13 extracted 14 Ent + 10 Rel doc-1a1e966345ca2bdd9d76f2d4c1b59ff8-chunk-003
+2026-06-16 11:10:23,543 - lightrag - INFO -  == LLM cache == saving: default:extract:d7c86796400922efe7a7ac79a704434b
+2026-06-16 11:10:23,908 - lightrag - INFO -  == LLM cache == saving: default:extract:dc89d55b629ce245c51a4a68363b4030
+2026-06-16 11:10:24,134 - lightrag - INFO -  == LLM cache == saving: default:extract:762e8b5f6178d510391a014f4aa0ea3c
+2026-06-16 11:10:25,635 - lightrag - INFO -  == LLM cache == saving: default:extract:5f938742c366d97f9606c3206cfaf8c1
+2026-06-16 11:10:25,636 - lightrag - INFO - Chunk 5 of 13 extracted 14 Ent + 8 Rel doc-1a1e966345ca2bdd9d76f2d4c1b59ff8-chunk-004
+2026-06-16 11:10:25,800 - lightrag - INFO -  == LLM cache == saving: default:extract:2ccc83948b8572c74963d38c1c303344
+2026-06-16 11:10:26,179 - lightrag - INFO -  == LLM cache == saving: default:extract:46ae099e8dd737150b3418d890b207ab
+2026-06-16 11:10:26,180 - lightrag - INFO - Chunk 6 of 13 extracted 12 Ent + 9 Rel doc-1a1e966345ca2bdd9d76f2d4c1b59ff8-chunk-005
+2026-06-16 11:10:26,601 - lightrag - INFO -  == LLM cache == saving: default:extract:4d81c9ee338a57078e0294a561b31f82
+2026-06-16 11:10:26,602 - lightrag - INFO - Chunk 7 of 13 extracted 13 Ent + 8 Rel doc-1a1e966345ca2bdd9d76f2d4c1b59ff8-chunk-006
+2026-06-16 11:10:28,006 - lightrag - INFO -  == LLM cache == saving: default:extract:b58f23e0eff4486f357ade53d0da6c05
+2026-06-16 11:10:28,007 - lightrag - INFO - Chunk 8 of 13 extracted 13 Ent + 7 Rel doc-1a1e966345ca2bdd9d76f2d4c1b59ff8-chunk-007
+2026-06-16 11:10:28,585 - lightrag - INFO -  == LLM cache == saving: default:extract:ee0c0dcff2634a919c28023acc3b1d01
+2026-06-16 11:10:29,145 - lightrag - INFO -  == LLM cache == saving: default:extract:32f4fc205c475f27022cb3495aec52a9
+2026-06-16 11:10:29,464 - lightrag - INFO -  == LLM cache == saving: default:extract:6767d64b8402f3debe2146f3e2fbbe9a
+2026-06-16 11:10:30,547 - lightrag - INFO -  == LLM cache == saving: default:extract:3a4a268d00fed6babf824adbf641aad2
+2026-06-16 11:10:30,549 - lightrag - INFO - Chunk 9 of 13 extracted 17 Ent + 10 Rel doc-1a1e966345ca2bdd9d76f2d4c1b59ff8-chunk-008
+2026-06-16 11:10:30,989 - lightrag - INFO -  == LLM cache == saving: default:extract:f9a0e8a24afc78a4ded89c0b888235f3
+2026-06-16 11:10:31,278 - lightrag - INFO -  == LLM cache == saving: default:extract:2e1fd137069035f7b152fbe7a39ef85c
+2026-06-16 11:10:31,279 - lightrag - INFO - Chunk 10 of 13 extracted 16 Ent + 8 Rel doc-1a1e966345ca2bdd9d76f2d4c1b59ff8-chunk-010
+2026-06-16 11:10:32,344 - lightrag - INFO -  == LLM cache == saving: default:extract:69c35bd94ab5862559b1343889e1c943
+2026-06-16 11:10:32,347 - lightrag - INFO - Chunk 11 of 13 extracted 19 Ent + 12 Rel doc-1a1e966345ca2bdd9d76f2d4c1b59ff8-chunk-009
+2026-06-16 11:10:33,267 - lightrag - INFO -  == LLM cache == saving: default:extract:b4aedaf48fa0bea3cd08bb0b088b2bb8
+2026-06-16 11:10:33,458 - lightrag - INFO -  == LLM cache == saving: default:extract:9583caef54c3280cf7f825229b34de9d
+2026-06-16 11:10:33,460 - lightrag - INFO - Chunk 12 of 13 extracted 21 Ent + 10 Rel doc-1a1e966345ca2bdd9d76f2d4c1b59ff8-chunk-011
+2026-06-16 11:10:35,412 - lightrag - INFO -  == LLM cache == saving: default:extract:99c9c28bad7fc88f9ad2a2430152ddaf
+2026-06-16 11:10:35,413 - lightrag - INFO - Chunk 13 of 13 extracted 14 Ent + 7 Rel doc-1a1e966345ca2bdd9d76f2d4c1b59ff8-chunk-012
+2026-06-16 11:10:35,413 - lightrag - INFO - Merging stage 1/1: 05.06.2020_apelacao_ribeira_do_pombal.pdf
+2026-06-16 11:10:35,413 - lightrag - INFO - Phase 1: Processing 145 entities from doc-1a1e966345ca2bdd9d76f2d4c1b59ff8 (async: 8)
+2026-06-16 11:10:35,449 - lightrag - INFO - Phase 2: Processing 109 relations from doc-1a1e966345ca2bdd9d76f2d4c1b59ff8 (async: 8)
+2026-06-16 11:10:35,453 - lightrag - INFO - Upserting relation VDB: `Recurso Repetitivo->STJ`
+2026-06-16 11:10:35,453 - lightrag - INFO - Upserting relation VDB: `1ª Promotoria de Justiça de Ribeira do Pombal-BA->Ribeira do Pombal-BA`
+2026-06-16 11:10:35,454 - lightrag - INFO - Upserting relation VDB: `José Flávio de Almeida->TJ-MG`
+2026-06-16 11:10:35,454 - lightrag - INFO - Upserting relation VDB: `Fernando Ferreira de Moraes->TJPR`
+2026-06-16 11:10:35,455 - lightrag - INFO - Upserting relation VDB: `1ª Promotoria de Justiça de Ribeira do Pombal-BA->Ministério Público da Bahia`
+2026-06-16 11:10:35,456 - lightrag - INFO - Upserting relation VDB: `STJ->TJ-MG`
+2026-06-16 11:10:35,457 - lightrag - INFO - Upserting relation VDB: `Princípio da Inafastabilidade do Controle Jurisdicional->TJPR`
+2026-06-16 11:10:35,457 - lightrag - INFO - Upserting relation VDB: `1ª Promotoria De Justiça De Ribeira Do Pombal-BA->Município De Ribeira Do Pombal-BA`
+2026-06-16 11:10:35,458 - lightrag - INFO - Upserting relation VDB: `Supremo Tribunal Federal->União`
+2026-06-16 11:10:35,459 - lightrag - INFO - Upserting relation VDB: `Art. 5º, XXXV, CF->TJ-MG`
+2026-06-16 11:10:35,460 - lightrag - INFO - Upserting relation VDB: `STJ->TJPR`
+2026-06-16 11:10:35,460 - lightrag - INFO - Upserting relation VDB: `Estados->União`
+2026-06-16 11:10:35,460 - lightrag - INFO - Upserting relation VDB: `Ministério Público->Município De Ribeira Do Pombal-BA`
+2026-06-16 11:10:35,461 - lightrag - INFO - Upserting relation VDB: `COVID-19->Pandemia`
+2026-06-16 11:10:35,462 - lightrag - INFO - Upserting relation VDB: `Municípios->Saúde Pública`
+2026-06-16 11:10:35,463 - lightrag - INFO - Upserting relation VDB: `Código de Processo Civil->STJ`
+2026-06-16 11:10:35,463 - lightrag - INFO - Upserting relation VDB: `Constituição Federal->União`
+2026-06-16 11:10:35,463 - lightrag - INFO - Upserting relation VDB: `Ministério Público Do Estado Da Bahia->Município De Ribeira Do Pombal-Ba`
+2026-06-16 11:10:35,465 - lightrag - INFO - Upserting relation VDB: `1ª Promotoria De Justiça De Ribeira Do Pombal-Ba->Alan Cedraz Carneiro Santiago`
+2026-06-16 11:10:35,466 - lightrag - INFO - Upserting relation VDB: `Estados->Municípios`
+2026-06-16 11:10:35,467 - lightrag - INFO - Upserting relation VDB: `Boletim Epidemiológico Nº 8->Ministério Da Saúde`
+2026-06-16 11:10:35,467 - lightrag - INFO - Upserting relation VDB: `Decreto Municipal N. 44/2020->Município De Ribeira Do Pombal-Ba`
+2026-06-16 11:10:35,468 - lightrag - INFO - Upserting relation VDB: `Ministério Público Do Estado Da Bahia->Tribunal De Justiça Do Estado Da Bahia`
+2026-06-16 11:10:35,469 - lightrag - INFO - Upserting relation VDB: `Decreto Estadual->Decreto Municipal`
+2026-06-16 11:10:35,470 - lightrag - INFO - Upserting relation VDB: `COVID-19->Município De Ribeira Do Pombal-Ba`
+2026-06-16 11:10:35,470 - lightrag - INFO - Upserting relation VDB: `Procuradoria->Tribunal De Justiça Do Estado Da Bahia`
+2026-06-16 11:10:35,471 - lightrag - INFO - Upserting relation VDB: `Ministério Público Do Estado Da Bahia->Vara Cível Da Comarca De Ribeira Do Pombal`
+2026-06-16 11:10:35,471 - lightrag - INFO - Upserting relation VDB: `Cármen Lúcia->STF`
+2026-06-16 11:10:35,471 - lightrag - INFO - Upserting relation VDB: `TJSP->Walmir Idalêncio dos Santos Cruz`
+2026-06-16 11:10:35,472 - lightrag - INFO - Upserting relation VDB: `Decreto Estadual->Poder Executivo Estadual`
+2026-06-16 11:10:35,473 - lightrag - INFO - Upserting relation VDB: `Bahia->Município de Ribeira do Pombal-BA`
+2026-06-16 11:10:35,473 - lightrag - INFO - Upserting relation VDB: `COVID-19->Ministério Da Saúde`
+2026-06-16 11:10:35,475 - lightrag - INFO - Upserting relation VDB: `Boletim Epidemiológico->Ministério da Saúde`
+2026-06-16 11:10:35,476 - lightrag - INFO - Upserting relation VDB: `Decretos Municipais->Município De Parnaíba`
+2026-06-16 11:10:35,476 - lightrag - INFO - Upserting relation VDB: `1ª Promotoria de Justiça de Ribeira do Pombal-BA->Município de Ribeira do Pombal-BA`
+2026-06-16 11:10:35,477 - lightrag - INFO - Upserting relation VDB: `COVID-19->Ministério da Saúde`
+2026-06-16 11:10:35,478 - lightrag - INFO - Upserting relation VDB: `Boletim Epidemiológico->SESAB`
+2026-06-16 11:10:35,479 - lightrag - INFO - Upserting relation VDB: `Decisão Liminar->Juíza Anna Victoria Muylaert Saraiva Cavalcanti Dias`
+2026-06-16 11:10:35,479 - lightrag - INFO - Upserting relation VDB: `Município De Parnaíba->Supremo Tribunal Federal`
+2026-06-16 11:10:35,480 - lightrag - INFO - Upserting relation VDB: `Decretos Municipais->Governo Do Estado`
+2026-06-16 11:10:35,480 - lightrag - INFO - Upserting relation VDB: `Covid-19->Organização Mundial De Saúde`
+2026-06-16 11:10:35,481 - lightrag - INFO - Upserting relation VDB: `CNN Brasil->COVID-19`
+2026-06-16 11:10:35,482 - lightrag - INFO - Upserting relation VDB: `Decisão Liminar->Ministra Rosa Weber`
+2026-06-16 11:10:35,482 - lightrag - INFO - Upserting relation VDB: `Reclamação Constitucional 40.130/PI->Supremo Tribunal Federal`
+2026-06-16 11:10:35,483 - lightrag - INFO - Upserting relation VDB: `Município De Parnaíba->Tribunal De Justiça De São Paulo`
+2026-06-16 11:10:35,483 - lightrag - INFO - Upserting relation VDB: `Decreto Estadual Nº 64.946/2020->Estado De São Paulo`
+2026-06-16 11:10:35,485 - lightrag - INFO - Upserting relation VDB: `1ª Promotoria de Justiça de Ribeira do Pombal-BA->Ministério Público`
+2026-06-16 11:10:35,485 - lightrag - INFO - Upserting relation VDB: `ADI Nº 6.341-MC->Supremo Tribunal Federal`
+2026-06-16 11:10:35,485 - lightrag - INFO - Upserting relation VDB: `Município De São Paulo->Tribunal De Justiça De São Paulo`
+2026-06-16 11:10:35,487 - lightrag - INFO - Upserting relation VDB: `4ª Vara Cível Da Comarca De Parnaíba->Município De Parnaíba`
+2026-06-16 11:10:35,487 - lightrag - INFO - Upserting relation VDB: `Constituição Federal->Direitos Fundamentais`
+2026-06-16 11:10:35,488 - lightrag - INFO - Upserting relation VDB: `Controle Judiciário->Poder Judiciário`
+2026-06-16 11:10:35,488 - lightrag - INFO - Upserting relation VDB: `Ação Civil Pública->Educação`
+2026-06-16 11:10:35,489 - lightrag - INFO - Upserting relation VDB: `Supremo Tribunal Federal->Tribunal de Justiça do Estado da Bahia`
+2026-06-16 11:10:35,490 - lightrag - INFO - Upserting relation VDB: `1ª Promotoria De Justiça De Ribeira Do Pombal-BA->Ribeira Do Pombal-BA`
+2026-06-16 11:10:35,492 - lightrag - INFO - Upserting relation VDB: `Centro De Apoio E Defesa Da Saúde – CESAU->Ministério Público Do Estado Da Bahia`
+2026-06-16 11:10:35,493 - lightrag - INFO - Upserting relation VDB: `Poder Judiciário->Procuradoria Federal Dos Direitos Do Cidadão – PFDC/MPF`
+2026-06-16 11:10:35,493 - lightrag - INFO - Upserting relation VDB: `Educação->Transporte Escolar`
+2026-06-16 11:10:35,493 - lightrag - INFO - Upserting relation VDB: `Ação Civil Pública->Ministério Público`
+2026-06-16 11:10:35,494 - lightrag - INFO - Upserting relation VDB: `Boletim Epidemiológico Nº 71->Secretaria De Saúde Do Estado Da Bahia`
+2026-06-16 11:10:35,494 - lightrag - INFO - Upserting relation VDB: `Edson Fachin->Supremo Tribunal Federal`
+2026-06-16 11:10:35,495 - lightrag - INFO - Upserting relation VDB: `Boletim Epidemiológico Nº 8->COVID-19`
+2026-06-16 11:10:35,496 - lightrag - INFO - Upserting relation VDB: `1ª Promotoria De Justiça De Ribeira Do Pombal-BA->Ministério Público Do Estado Da Bahia`
+2026-06-16 11:10:35,497 - lightrag - INFO - Upserting relation VDB: `Poder Judiciário->Supremo Tribunal Federal`
+2026-06-16 11:10:35,497 - lightrag - INFO - Upserting relation VDB: `Lei Federal nº 13.979/2020->Poder Executivo`
+2026-06-16 11:10:35,498 - lightrag - INFO - Upserting relation VDB: `Ministério da Saúde->Organização Mundial de Saúde`
+2026-06-16 11:10:35,500 - lightrag - INFO - Upserting relation VDB: `Princípios da prevenção e da precaução->Supremo Tribunal Federal`
+2026-06-16 11:10:35,500 - lightrag - INFO - Upserting relation VDB: `Juiz De Direito->Poder Judiciário`
+2026-06-16 11:10:35,500 - lightrag - INFO - Upserting relation VDB: `Aedes aegypti->Ministério da Saúde`
+2026-06-16 11:10:35,502 - lightrag - INFO - Upserting relation VDB: `1ª Promotoria De Justiça De Ribeira Do Pombal-BA->Tribunal De Justiça`
+2026-06-16 11:10:35,502 - lightrag - INFO - Upserting relation VDB: `Ministério Público Do Estado Da Bahia->Município De Ribeira Do Pombal`
+2026-06-16 11:10:35,503 - lightrag - INFO - Upserting relation VDB: `ADPF 669->Supremo Tribunal Federal`
+2026-06-16 11:10:35,503 - lightrag - INFO - Upserting relation VDB: `Aedes aegypti->Lei n. 13.301`
+2026-06-16 11:10:35,504 - lightrag - INFO - Upserting relation VDB: `Covid-19->Subnotificação`
+2026-06-16 11:10:35,504 - lightrag - INFO - Upserting relation VDB: `CNN Brasil->Município De Ribeira Do Pombal`
+2026-06-16 11:10:35,506 - lightrag - INFO - Upserting relation VDB: `Superior Tribunal de Justiça->Supremo Tribunal Federal`
+2026-06-16 11:10:35,507 - lightrag - INFO - Upserting relation VDB: `ADPF 669->Ministro Luís Roberto Barroso`
+2026-06-16 11:10:35,508 - lightrag - INFO - Upserting relation VDB: `1ª Promotoria de Justiça de Ribeira do Pombal-BA->Tribunal de Justiça da Bahia`
+2026-06-16 11:10:35,508 - lightrag - INFO - Upserting relation VDB: `Código de Processo Civil->Fredie Didier Jr.`
+2026-06-16 11:10:35,509 - lightrag - INFO - Upserting relation VDB: `Decreto Municipal Nº 44/2020->Município De Ribeira Do Pombal`
+2026-06-16 11:10:35,509 - lightrag - INFO - Upserting relation VDB: `Habeas Corpus->Mandado de Segurança`
+2026-06-16 11:10:35,509 - lightrag - INFO - Upserting relation VDB: `Renato Dresch->Tribunal de Justiça de Minas Gerais`
+2026-06-16 11:10:35,510 - lightrag - INFO - Upserting relation VDB: `Covid-19->Município De Limeira`
+2026-06-16 11:10:35,512 - lightrag - INFO - Upserting relation VDB: `Decreto Estadual->Tribunal De Justiça De São Paulo`
+2026-06-16 11:10:35,512 - lightrag - INFO - Upserting relation VDB: `Rosa Weber->STF`
+2026-06-16 11:10:35,513 - lightrag - INFO - Upserting relation VDB: `Decreto Municipal Nº 44/2020->Ministério Público Do Estado Da Bahia`
+2026-06-16 11:10:35,513 - lightrag - INFO - Upserting relation VDB: `Ana LiarTE->TJSP`
+2026-06-16 11:10:35,514 - lightrag - INFO - Upserting relation VDB: `Ministério Da Saúde->Protocolo De Tratamento Do Novo Coronavírus`
+2026-06-16 11:10:35,514 - lightrag - INFO - Upserting relation VDB: `Drs9 - Marília->Plano De Contingência Regional`
+2026-06-16 11:10:35,515 - lightrag - INFO - Upserting relation VDB: `Comitê De Enfrentamento Ao Covid-19->Município De Limeira`
+2026-06-16 11:10:35,517 - lightrag - INFO - Upserting relation VDB: `Min. Edson Fachin->STF`
+2026-06-16 11:10:35,518 - lightrag - INFO - Upserting relation VDB: `COVID-19->Lei Federal Nº 13.979/2020`
+2026-06-16 11:10:35,518 - lightrag - INFO - Upserting relation VDB: `Decreto Estadual Nº 19.529/2020->Município De Ribeira Do Pombal-BA`
+2026-06-16 11:10:35,519 - lightrag - INFO - Upserting relation VDB: `1ª Promotoria De Justiça De Ribeira Do Pombal-Ba->Município De Limeira`
+2026-06-16 11:10:35,520 - lightrag - INFO - Upserting relation VDB: `Princípio Da Separação Dos Poderes->STF`
+2026-06-16 11:10:35,521 - lightrag - INFO - Upserting relation VDB: `Lei Federal Nº 13.979/2020->Pandemia De COVID-19`
+2026-06-16 11:10:35,521 - lightrag - INFO - Upserting relation VDB: `Bahia->Município De Ribeira Do Pombal-BA`
+2026-06-16 11:10:35,521 - lightrag - INFO - Upserting relation VDB: `Decreto Estadual Nº 19.529/2020->Distanciamento Social`
+2026-06-16 11:10:35,522 - lightrag - INFO - Upserting relation VDB: `Aedes Aegypti->Lei N. 13.301`
+2026-06-16 11:10:35,523 - lightrag - INFO - Upserting relation VDB: `Artigo 225->Constituição Da República`
+2026-06-16 11:10:35,524 - lightrag - INFO - Upserting relation VDB: `1ª Promotoria De Justiça De Ribeira Do Pombal-BA->STF`
+2026-06-16 11:10:35,525 - lightrag - INFO - Upserting relation VDB: `COVID-19->Pandemia De COVID-19`
+2026-06-16 11:10:35,527 - lightrag - INFO - Upserting relation VDB: `Hospital Dirceu Arcoverde-HEDA->UTI`
+2026-06-16 11:10:35,527 - lightrag - INFO - Upserting relation VDB: `Artigo 300->NCPC`
+2026-06-16 11:10:35,528 - lightrag - INFO - Upserting relation VDB: `Decreto Municipal->Tutela De Urgência`
+2026-06-16 11:10:35,528 - lightrag - INFO - Upserting relation VDB: `Direito À Saúde->Princípio Da Precaução`
+2026-06-16 11:10:35,529 - lightrag - INFO - Upserting relation VDB: `Ministro Edson Fachin->STF`
+2026-06-16 11:10:35,529 - lightrag - INFO - Upserting relation VDB: `Covid-19->UTI`
+2026-06-16 11:10:35,530 - lightrag - INFO - Upserting relation VDB: `Princípio Da Precaução->Princípio Da Prevenção`
+2026-06-16 11:10:35,530 - lightrag - INFO - Phase 2 relation processing completed for doc-1a1e966345ca2bdd9d76f2d4c1b59ff8: edges=109 added_entities=1
+2026-06-16 11:10:35,531 - lightrag - INFO - Phase 3: Updating final 146(145+1) entities and  109 relations from doc-1a1e966345ca2bdd9d76f2d4c1b59ff8
+2026-06-16 11:10:35,531 - lightrag - INFO - Completed merging: 145 entities, 1 extra entities, 109 relations
+2026-06-16 11:10:35,543 - lightrag - INFO - [] entities flush: embedding 146 vectors in 15 batch(es) (batch_num=10)
+2026-06-16 11:10:35,543 - lightrag - INFO - [] relationships flush: embedding 109 vectors in 11 batch(es) (batch_num=10)
+2026-06-16 11:10:35,544 - lightrag - INFO - [] chunks flush: embedding 13 vectors in 2 batch(es) (batch_num=10)
+2026-06-16 11:10:35,544 - lightrag - INFO - Embedding func: 8 new workers initialized (Timeouts: Func: 30s, Worker: 60s, Health Check: 75s)
+2026-06-16 11:10:37,057 - lightrag - INFO - [] Writing graph with 146 nodes, 109 edges
+2026-06-16 11:11:01,522 - lightrag - INFO - [] Subgraph query successful | Node count: 146 | Edge count: 109
+2026-06-16 11:11:01,526 - uvicorn.access - INFO - 127.0.0.1:61052 - "GET /graphs?label=*&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2026-06-16 11:11:26,510 - lightrag - INFO - In memory DB persist to disk
+2026-06-16 11:11:26,510 - lightrag - INFO - Completed processing file 1/1: 05.06.2020_apelacao_ribeira_do_pombal.pdf
+2026-06-16 11:11:26,511 - lightrag - INFO - Enqueued document processing pipeline stopped
+2026-06-16 11:12:17,486 - uvicorn.access - INFO - 127.0.0.1:51211 - "GET /graph/label/popular?limit=300 HTTP/1.1" 200
+2026-06-16 11:13:24,405 - lightrag - INFO - keyword LLM func: 4 new workers initialized (Timeouts: Func: 240s, Worker: 480s, Health Check: 495s)
+2026-06-16 11:13:24,724 - uvicorn.access - INFO - 127.0.0.1:57623 - "GET /webui/assets/rehype-katex-DeDb6b_f.js HTTP/1.1" 200
+2026-06-16 11:13:25,053 - lightrag - INFO -  == LLM cache == saving: global:keywords:f9f674f1cab7ab6b1b92bb030e0bc316
+2026-06-16 11:13:26,217 - lightrag - INFO - Query edges: relação, processo (top_k:40, cosine:0.2)
+2026-06-16 11:13:26,229 - lightrag - INFO - Global query: 61 entites, 40 relations
+2026-06-16 11:13:26,230 - lightrag - INFO - Raw search results: 61 entities, 40 relations, 0 vector chunks
+2026-06-16 11:13:26,233 - lightrag - INFO - After truncation: 61 entities, 40 relations
+2026-06-16 11:13:26,236 - lightrag - INFO - Selecting 13 from 13 entity-related chunks by vector similarity
+2026-06-16 11:13:26,237 - lightrag - INFO - Find no additional relations-related chunks from 40 relations
+2026-06-16 11:13:26,237 - lightrag - INFO - Round-robin merged chunks: 13 -> 13 (deduplicated 0)
+2026-06-16 11:13:26,240 - lightrag - INFO - Rerank func: 4 new workers initialized (Timeouts: Func: 30s, Worker: 60s, Health Check: 75s)
+2026-06-16 11:13:27,772 - lightrag - INFO - Successfully reranked: 13 chunks from 13 original chunks
+2026-06-16 11:13:27,778 - lightrag - INFO - Final context: 61 entities, 40 relations, 13 chunks
+2026-06-16 11:13:27,778 - lightrag - INFO - Final chunks S+F/O: E6/4 E10/2 E9/6 E7/8 E5/3 E10/7 E7/13 E5/1 E7/9 E11/11 E8/12 E4/10 E9/5
+2026-06-16 11:13:27,793 - lightrag - INFO - query LLM func: 4 new workers initialized (Timeouts: Func: 240s, Worker: 480s, Health Check: 495s)
+2026-06-16 11:13:28,412 - uvicorn.access - INFO - 127.0.0.1:58081 - "POST /query/stream HTTP/1.1" 200
+2026-06-16 11:15:21,233 - lightrag - INFO -  == LLM cache == saving: global:keywords:77f947f7ce675a8d1d3efb7dfb258837
+2026-06-16 11:15:22,354 - lightrag - INFO - Query edges: Reclamação (top_k:40, cosine:0.2)
+2026-06-16 11:15:22,359 - lightrag - INFO - Global query: 54 entites, 40 relations
+2026-06-16 11:15:22,359 - lightrag - INFO - Raw search results: 54 entities, 40 relations, 0 vector chunks
+2026-06-16 11:15:22,361 - lightrag - INFO - After truncation: 54 entities, 40 relations
+2026-06-16 11:15:22,363 - lightrag - INFO - Selecting 13 from 13 entity-related chunks by vector similarity
+2026-06-16 11:15:22,364 - lightrag - INFO - Find no additional relations-related chunks from 40 relations
+2026-06-16 11:15:22,364 - lightrag - INFO - Round-robin merged chunks: 13 -> 13 (deduplicated 0)
+2026-06-16 11:15:23,591 - lightrag - INFO - Successfully reranked: 13 chunks from 13 original chunks
+2026-06-16 11:15:23,601 - lightrag - INFO - Final context: 54 entities, 40 relations, 13 chunks
+2026-06-16 11:15:23,602 - lightrag - INFO - Final chunks S+F/O: E9/3 E4/13 E10/6 E5/10 E7/5 E8/8 E5/1 E9/11 E7/2 E7/9 E8/7 E6/12 E7/4
+2026-06-16 11:15:24,053 - uvicorn.access - INFO - 127.0.0.1:49812 - "POST /query/stream HTTP/1.1" 200
+2026-06-16 11:16:40,608 - lightrag - INFO -  == LLM cache == saving: global:keywords:d15bd529fcb26b5c505db028a34a6a07
+2026-06-16 11:16:41,699 - lightrag - INFO - Query edges: contexto juridico (top_k:40, cosine:0.2)
+2026-06-16 11:16:41,701 - lightrag - INFO - Global query: 52 entites, 40 relations
+2026-06-16 11:16:41,702 - lightrag - INFO - Raw search results: 52 entities, 40 relations, 0 vector chunks
+2026-06-16 11:16:41,704 - lightrag - INFO - After truncation: 52 entities, 40 relations
+2026-06-16 11:16:41,706 - lightrag - INFO - Selecting 13 from 13 entity-related chunks by vector similarity
+2026-06-16 11:16:41,706 - lightrag - INFO - Find no additional relations-related chunks from 40 relations
+2026-06-16 11:16:41,707 - lightrag - INFO - Round-robin merged chunks: 13 -> 13 (deduplicated 0)
+2026-06-16 11:16:43,147 - lightrag - INFO - Successfully reranked: 13 chunks from 13 original chunks
+2026-06-16 11:16:43,154 - lightrag - INFO - Final context: 52 entities, 40 relations, 13 chunks
+2026-06-16 11:16:43,154 - lightrag - INFO - Final chunks S+F/O: E4/5 E5/3 E7/2 E3/7 E6/4 E5/1 E3/8 E9/12 E7/6 E9/9 E9/10 E2/11 E10/13
+2026-06-16 11:16:43,674 - uvicorn.access - INFO - 127.0.0.1:49326 - "POST /query/stream HTTP/1.1" 200
+2026-06-16 11:17:51,581 - lightrag - INFO -  == LLM cache == saving: global:keywords:40b5c09a0b2628d68c1f230ce32215bd
+2026-06-16 11:17:52,720 - lightrag - INFO - Query edges: Ministério Público, medidas (top_k:40, cosine:0.2)
+2026-06-16 11:17:52,723 - lightrag - INFO - Global query: 53 entites, 40 relations
+2026-06-16 11:17:52,723 - lightrag - INFO - Raw search results: 53 entities, 40 relations, 0 vector chunks
+2026-06-16 11:17:52,730 - lightrag - INFO - After truncation: 53 entities, 40 relations
+2026-06-16 11:17:52,733 - lightrag - INFO - Selecting 13 from 13 entity-related chunks by vector similarity
+2026-06-16 11:17:52,733 - lightrag - INFO - Find no additional relations-related chunks from 40 relations
+2026-06-16 11:17:52,733 - lightrag - INFO - Round-robin merged chunks: 13 -> 13 (deduplicated 0)
+2026-06-16 11:17:54,147 - lightrag - INFO - Successfully reranked: 13 chunks from 13 original chunks
+2026-06-16 11:17:54,155 - lightrag - INFO - Final context: 53 entities, 40 relations, 13 chunks
+2026-06-16 11:17:54,156 - lightrag - INFO - Final chunks S+F/O: E6/6 E8/1 E9/7 E7/2 E8/3 E7/8 E5/4 E9/5 E4/10 E6/11 E6/12 E7/9 E4/13
+2026-06-16 11:17:54,732 - uvicorn.access - INFO - 127.0.0.1:51379 - "POST /query/stream HTTP/1.1" 200
+2026-06-16 11:19:03,762 - lightrag - INFO -  == LLM cache == saving: hybrid:keywords:8f49a104d70c03ca5de08bac02830c72
+2026-06-16 11:19:04,872 - lightrag - INFO - Query nodes: Estado da Bahia (top_k:40, cosine:0.2)
+2026-06-16 11:19:04,879 - lightrag - INFO - Local query: 40 entites, 49 relations
+2026-06-16 11:19:04,879 - lightrag - INFO - Query edges: Ministério Público (top_k:40, cosine:0.2)
+2026-06-16 11:19:04,881 - lightrag - INFO - Global query: 48 entites, 40 relations
+2026-06-16 11:19:04,882 - lightrag - INFO - Raw search results: 71 entities, 70 relations, 0 vector chunks
+2026-06-16 11:19:04,885 - lightrag - INFO - After truncation: 71 entities, 70 relations
+2026-06-16 11:19:04,887 - lightrag - INFO - Selecting 13 from 13 entity-related chunks by vector similarity
+2026-06-16 11:19:04,887 - lightrag - INFO - Find no additional relations-related chunks from 70 relations
+2026-06-16 11:19:04,888 - lightrag - INFO - Round-robin merged chunks: 13 -> 13 (deduplicated 0)
+2026-06-16 11:19:05,741 - lightrag - ERROR - Rerank API error 403: {"detail":"Insufficient account balance. Top up your account at https://jina.ai/api-dashboard/key-manager.","request_id":"708b73bf1d4f69e1373253b2ff5952dd","code":"AUTHZ_INSUFFICIENT_BALANCE"}
+2026-06-16 11:19:10,803 - lightrag - ERROR - Rerank API error 403: {"detail":"Insufficient account balance. Top up your account at https://jina.ai/api-dashboard/key-manager.","request_id":"329782a6d4e8c592f9206592e6c16f16","code":"AUTHZ_INSUFFICIENT_BALANCE"}
+2026-06-16 11:19:16,052 - lightrag - ERROR - Rerank API error 403: {"detail":"Insufficient account balance. Top up your account at https://jina.ai/api-dashboard/key-manager.","request_id":"b26ca1d2909a698655f3764b6724c17a","code":"AUTHZ_INSUFFICIENT_BALANCE"}
+2026-06-16 11:19:16,053 - lightrag - ERROR - Rerank func: Error in decorated function for task 1680756391360_499058.171: RetryError[<Future at 0x187587710a0 state=finished raised ClientResponseError>]
+2026-06-16 11:19:16,053 - lightrag - ERROR - Error during reranking: RetryError[<Future at 0x187587710a0 state=finished raised ClientResponseError>], using original chunks
+2026-06-16 11:19:16,062 - lightrag - INFO - Final context: 71 entities, 70 relations, 13 chunks
+2026-06-16 11:19:16,062 - lightrag - INFO - Final chunks S+F/O: E8/1 E10/2 E9/3 E12/4 E7/5 E8/6 E9/7 E9/8 E6/9 E8/10 E11/11 E8/12 E4/13
+2026-06-16 11:19:16,579 - uvicorn.access - INFO - 127.0.0.1:57192 - "POST /query/stream HTTP/1.1" 200
+2026-06-16 12:58:24,994 - uvicorn.error - INFO - Shutting down
+2026-06-16 12:58:25,100 - uvicorn.error - INFO - Waiting for application shutdown.
+2026-06-16 12:58:25,102 - lightrag - INFO - Successfully finalized 12 storages
+2026-06-16 12:58:25,103 - uvicorn.error - INFO - Application shutdown complete.
+2026-06-16 12:58:25,103 - uvicorn.error - INFO - Finished server process [26840]

@@ -54,8 +54,14 @@ python 01_indexar_opensearch.py --recriar  # reindexa o corpus do TCU
 ```
 
 ### `02_multi_query.py` — Multi-Query RAG (#T10)
+Dois modos para comparar: **manual** (padrão — busca cada variação e deduplica com
+`_comum.dedup_por_id`) e **`--nativo`** (usa o componente oficial
+`MultiQueryEmbeddingRetriever` do Haystack, com retrieval **paralelo** e dedup interno
+`_deduplicate_documents` — mesma regra: por id, maior score). Em ambos as variações
+vêm do LLM (Groq); o componente nativo não gera variações, só recebe a lista pronta.
 ```bash
 python 02_multi_query.py --pergunta "o gestor pode ser multado pelo tribunal de contas?" --n 4
+python 02_multi_query.py --nativo   # MultiQueryEmbeddingRetriever (retrieval paralelo)
 ```
 
 ### `03_step_back.py` — Step-Back Prompting (#T11)
@@ -77,11 +83,23 @@ Dois modos:
 - **`--multi-doc`** (perguntas temáticas com vários docs relevantes, via clustering):
   é onde **Multi-Query/RAG-Fusion ganham** no Recall. Use `--top-k 10`.
 
+No modo `--multi-doc`, o **gabarito é coeso**: os `--rel-por-cluster` (padrão 4) documentos
+mais próximos do centroide de cada cluster (tema coerente). Isso evita o recall
+artificialmente baixo de quando o gabarito eram só 3 sementes soltas com query muito
+abstrata. **Importante:** se você já tem um `benchmark_multidoc.json` antigo, rode com
+`--gerar` para refazê-lo no novo formato.
+
 ```bash
-python 05_benchmark.py                       # modo coloquial (1 relevante/pergunta)
-python 05_benchmark.py --multi-doc --top-k 10  # modo temático (vários relevantes)
-python 05_benchmark.py --gerar               # força regerar o benchmark do modo atual
+python 05_benchmark.py                              # modo coloquial (1 relevante/pergunta)
+python 05_benchmark.py --multi-doc --top-k 10 --gerar   # refaz o benchmark temático coeso
+python 05_benchmark.py --multi-doc --top-k 10 --rel-por-cluster 5
 ```
+
+> Nota: o **Multi-Query** usa `dedup` por melhor score (não RRF). Como o score de cosseno
+> não é comparável entre queries diferentes, uma variação pode empurrar um relevante para
+> fora do top-k — por isso o Multi-Query pode ficar **abaixo** do Baseline em gabaritos
+> fracos. O **RAG-Fusion** usa RRF (baseado em rank) e é mais robusto a isso. Mantivemos
+> a distinção de propósito (é a lição: por que RRF > dedup).
 
 ### `06_chat_langfuse.py` — testa as técnicas com observabilidade
 Cada técnica é um **pipeline Haystack completo**, incluindo a **reescrita da query**

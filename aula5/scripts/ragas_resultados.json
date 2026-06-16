@@ -1,9 +1,9 @@
 {
   "medias": {
-    "faithfulness": 0.9285714285714286,
-    "answer_relevancy": 0.47241952027696577,
-    "context_recall": 0.9,
-    "llm_context_precision_with_reference": 0.7699999999264999
+    "faithfulness": 0.9483333333333335,
+    "answer_relevancy": 0.5255180961659054,
+    "context_recall": 0.7,
+    "llm_context_precision_with_reference": 0.49999999995
   },
   "n_pares": 10
 }

@@ -22,28 +22,28 @@
   },
   {
     "id": "GEN004",
-    "question": "Qual foi o valor do débito que restou após o recolhimento parcelado pelo Sr. Júlio Cesar Lima Batista?",
+    "question": "Qual foi o valor do débito que restou após o recolhimento da quase totalidade da dívida?",
     "ground_truth": "R$ 24,72",
     "tipo": "acordao_tcu",
     "doc_id": "acordao_2026_2341_2765697"
   },
   {
     "id": "GEN005",
-    "question": "Qual foi o resultado do Mandado de Segurança nº 40034-RJ, ajuizado pela empresa no Supremo Tribunal Federal contra o Acórdão 6.923/2024-TCU-2ª Câmara?",
+    "question": "Qual foi o resultado do Mandado de Segurança nº 40034-RJ, ajuizado pela empresa Stryker do Brasil Ltda. no Supremo Tribunal Federal?",
     "ground_truth": "A segurança foi denegada",
     "tipo": "acordao_tcu",
     "doc_id": "acordao_2026_2340_2737249"
   },
   {
     "id": "GEN006",
-    "question": "Qual foi o valor do débito solidário condenado ao pagamento no Acórdão 7404/2021 - TCU - 2ª Câmara?",
-    "ground_truth": "R$ 96.773,40",
+    "question": "Qual é o valor do saldo residual do débito solidário mencionado no Acórdão 2339/2026 do TCU?",
+    "ground_truth": "R$ 34,86",
     "tipo": "acordao_tcu",
     "doc_id": "acordao_2026_2339_2756817"
   },
   {
     "id": "GEN007",
-    "question": "Qual é o número do Acórdão emitido pelo TCU?",
+    "question": "Qual é o número do Acórdão do TCU mencionado no texto?",
     "ground_truth": "2338/2026",
     "tipo": "acordao_tcu",
     "doc_id": "acordao_2026_2338_2766861"
@@ -57,14 +57,14 @@
   },
   {
     "id": "GEN009",
-    "question": "Qual é o número do Acórdão emitido pelo TCU sobre o ato de pensão militar?",
+    "question": "Qual é o número do Acórdão mencionado no texto?",
     "ground_truth": "2336/2026",
     "tipo": "acordao_tcu",
     "doc_id": "acordao_2026_2336_2765799"
   },
   {
     "id": "GEN010",
-    "question": "Qual é o número do Acórdão mencionado no texto?",
+    "question": "Qual é o número do Acórdão emitido pelo TCU?",
     "ground_truth": "2335/2026",
     "tipo": "acordao_tcu",
     "doc_id": "acordao_2026_2335_2766557"

@@ -1,0 +1,1204 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d13" for="edge" attr.name="truncate" attr.type="string"/>
+<key id="d12" for="edge" attr.name="created_at" attr.type="long"/>
+<key id="d11" for="edge" attr.name="file_path" attr.type="string"/>
+<key id="d10" for="edge" attr.name="source_id" attr.type="string"/>
+<key id="d9" for="edge" attr.name="keywords" attr.type="string"/>
+<key id="d8" for="edge" attr.name="description" attr.type="string"/>
+<key id="d7" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d6" for="node" attr.name="truncate" attr.type="string"/>
+<key id="d5" for="node" attr.name="created_at" attr.type="long"/>
+<key id="d4" for="node" attr.name="file_path" attr.type="string"/>
+<key id="d3" for="node" attr.name="source_id" attr.type="string"/>
+<key id="d2" for="node" attr.name="description" attr.type="string"/>
+<key id="d1" for="node" attr.name="entity_type" attr.type="string"/>
+<key id="d0" for="node" attr.name="entity_id" attr.type="string"/>
+<graph edgedefault="undirected"><node id="Delegacia_Crimes_Organizados">
+  <data key="d0">Delegacia_Crimes_Organizados</data>
+  <data key="d1">organization</data>
+  <data key="d2">A delegation for organized crime investigations</data>
+  <data key="d3">doc-3fb006401d6140fd918a731354a97feb-chunk-001</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1781616405</data>
+  <data key="d6"></data>
+</node>
+<node id="Operação_Integração">
+  <data key="d0">Operação_Integração</data>
+  <data key="d1">operation</data>
+  <data key="d2">A law enforcement operation</data>
+  <data key="d3">doc-3fb006401d6140fd918a731354a97feb-chunk-001</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1781616405</data>
+  <data key="d6"></data>
+</node>
+<node id="Vara_Criminal">
+  <data key="d0">Vara_Criminal</data>
+  <data key="d1">organization</data>
+  <data key="d2">A criminal court</data>
+  <data key="d3">doc-3fb006401d6140fd918a731354a97feb-chunk-001</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1781616405</data>
+  <data key="d6"></data>
+</node>
+<node id="Ação_Controlada">
+  <data key="d0">Ação_Controlada</data>
+  <data key="d1">method</data>
+  <data key="d2">A controlled action or operation</data>
+  <data key="d3">doc-3fb006401d6140fd918a731354a97feb-chunk-001</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1781616405</data>
+  <data key="d6"></data>
+</node>
+<node id="Tráfico_Drogas">
+  <data key="d0">Tráfico_Drogas</data>
+  <data key="d1">concept</data>
+  <data key="d2">The concept of drug trafficking</data>
+  <data key="d3">doc-3fb006401d6140fd918a731354a97feb-chunk-001</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1781616405</data>
+  <data key="d6"></data>
+</node>
+<node id="Lavagem_Dinheiro">
+  <data key="d0">Lavagem_Dinheiro</data>
+  <data key="d1">concept</data>
+  <data key="d2">The concept of money laundering</data>
+  <data key="d3">doc-3fb006401d6140fd918a731354a97feb-chunk-001</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1781616405</data>
+  <data key="d6"></data>
+</node>
+<node id="Criptomoedas">
+  <data key="d0">Criptomoedas</data>
+  <data key="d1">artifact</data>
+  <data key="d2">Cryptocurrencies</data>
+  <data key="d3">doc-3fb006401d6140fd918a731354a97feb-chunk-001</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1781616405</data>
+  <data key="d6"></data>
+</node>
+<node id="CNJ">
+  <data key="d0">CNJ</data>
+  <data key="d1">organization</data>
+  <data key="d2">National Council of Justice</data>
+  <data key="d3">doc-3fb006401d6140fd918a731354a97feb-chunk-001</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1781616405</data>
+  <data key="d6"></data>
+</node>
+<node id="Resolução_345/2020">
+  <data key="d0">Resolução_345/2020</data>
+  <data key="d1">content</data>
+  <data key="d2">A resolution by CNJ</data>
+  <data key="d3">doc-3fb006401d6140fd918a731354a97feb-chunk-001</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1781616405</data>
+  <data key="d6"></data>
+</node>
+<node id="Prova_Digital">
+  <data key="d0">Prova_Digital</data>
+  <data key="d1">concept</data>
+  <data key="d2">Digital evidence</data>
+  <data key="d3">doc-3fb006401d6140fd918a731354a97feb-chunk-001</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1781616405</data>
+  <data key="d6"></data>
+</node>
+<node id="Cadeia_de_Custódia">
+  <data key="d0">Cadeia_de_Custódia</data>
+  <data key="d1">concept</data>
+  <data key="d2">Chain of custody</data>
+  <data key="d3">doc-3fb006401d6140fd918a731354a97feb-chunk-001</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1781616405</data>
+  <data key="d6"></data>
+</node>
+<node id="Perícia_Forense">
+  <data key="d0">Perícia_Forense</data>
+  <data key="d1">method</data>
+  <data key="d2">Forensic expertise</data>
+  <data key="d3">doc-3fb006401d6140fd918a731354a97feb-chunk-001</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1781616405</data>
+  <data key="d6"></data>
+</node>
+<node id="Hash_Criptográfico">
+  <data key="d0">Hash_Criptográfico</data>
+  <data key="d1">artifact</data>
+  <data key="d2">Cryptographic hash</data>
+  <data key="d3">doc-3fb006401d6140fd918a731354a97feb-chunk-001</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1781616405</data>
+  <data key="d6"></data>
+</node>
+<node id="CPP">
+  <data key="d0">CPP</data>
+  <data key="d1">content</data>
+  <data key="d2">Code of Criminal Procedure</data>
+  <data key="d3">doc-3fb006401d6140fd918a731354a97feb-chunk-001</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1781616405</data>
+  <data key="d6"></data>
+</node>
+<node id="Marcos_Aurélio_Silva">
+  <data key="d0">Marcos_Aurélio_Silva</data>
+  <data key="d1">person</data>
+  <data key="d2">An individual involved in a case</data>
+  <data key="d3">doc-3fb006401d6140fd918a731354a97feb-chunk-001</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1781616405</data>
+  <data key="d6"></data>
+</node>
+<node id="TRF-4">
+  <data key="d0">TRF-4</data>
+  <data key="d1">organization</data>
+  <data key="d2">A federal regional court</data>
+  <data key="d3">doc-3fb006401d6140fd918a731354a97feb-chunk-001</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1781616405</data>
+  <data key="d6"></data>
+</node>
+<node id="Bitcoin">
+  <data key="d0">Bitcoin</data>
+  <data key="d1">artifact</data>
+  <data key="d2">A cryptocurrency</data>
+  <data key="d3">doc-3fb006401d6140fd918a731354a97feb-chunk-001</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1781616405</data>
+  <data key="d6"></data>
+</node>
+<node id="Monero">
+  <data key="d0">Monero</data>
+  <data key="d1">artifact</data>
+  <data key="d2">A cryptocurrency</data>
+  <data key="d3">doc-3fb006401d6140fd918a731354a97feb-chunk-001</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1781616405</data>
+  <data key="d6"></data>
+</node>
+<node id="USDT">
+  <data key="d0">USDT</data>
+  <data key="d1">artifact</data>
+  <data key="d2">A cryptocurrency</data>
+  <data key="d3">doc-3fb006401d6140fd918a731354a97feb-chunk-001</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1781616405</data>
+  <data key="d6"></data>
+</node>
+<node id="CVM">
+  <data key="d0">CVM</data>
+  <data key="d1">organization</data>
+  <data key="d2">A regulatory body</data>
+  <data key="d3">doc-3fb006401d6140fd918a731354a97feb-chunk-001</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1781616405</data>
+  <data key="d6"></data>
+</node>
+<node id="Lei_9613/98">
+  <data key="d0">Lei_9613/98</data>
+  <data key="d1">content</data>
+  <data key="d2">A law about money laundering</data>
+  <data key="d3">doc-3fb006401d6140fd918a731354a97feb-chunk-001</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1781616405</data>
+  <data key="d6"></data>
+</node>
+<node id="Lei_11343/06">
+  <data key="d0">Lei_11343/06</data>
+  <data key="d1">content</data>
+  <data key="d2">A law about drug trafficking</data>
+  <data key="d3">doc-3fb006401d6140fd918a731354a97feb-chunk-001</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1781616405</data>
+  <data key="d6"></data>
+</node>
+<node id="SENASP">
+  <data key="d0">SENASP</data>
+  <data key="d1">organization</data>
+  <data key="d2">A Brazilian organization related to public security and justice&lt;SEP&gt;Secretariat of National Security Planning</data>
+  <data key="d3">doc-3fb006401d6140fd918a731354a97feb-chunk-001&lt;SEP&gt;doc-3fb006401d6140fd918a731354a97feb-chunk-002</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1781616405</data>
+  <data key="d6"></data>
+</node>
+<node id="Ministério_da_Justiça">
+  <data key="d0">Ministério_da_Justiça</data>
+  <data key="d1">organization</data>
+  <data key="d2">Ministry of Justice</data>
+  <data key="d3">doc-3fb006401d6140fd918a731354a97feb-chunk-001</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1781616405</data>
+  <data key="d6"></data>
+</node>
+<node id="Autopsy">
+  <data key="d0">Autopsy</data>
+  <data key="d1">artifact</data>
+  <data key="d2">A forensic method used for examining dead bodies to determine the cause of death&lt;SEP&gt;A tool for digital forensics</data>
+  <data key="d3">doc-3fb006401d6140fd918a731354a97feb-chunk-001&lt;SEP&gt;doc-3fb006401d6140fd918a731354a97feb-chunk-002</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1781616405</data>
+  <data key="d6"></data>
+</node>
+<node id="Wireshark">
+  <data key="d0">Wireshark</data>
+  <data key="d1">artifact</data>
+  <data key="d2">A network protocol analyzer tool used for forensic analysis&lt;SEP&gt;A tool for network analysis</data>
+  <data key="d3">doc-3fb006401d6140fd918a731354a97feb-chunk-001&lt;SEP&gt;doc-3fb006401d6140fd918a731354a97feb-chunk-002</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1781616405</data>
+  <data key="d6"></data>
+</node>
+<node id="Cellebrite">
+  <data key="d0">Cellebrite</data>
+  <data key="d1">artifact</data>
+  <data key="d2">A digital forensics tool used for mobile device analysis&lt;SEP&gt;A tool for mobile data extraction</data>
+  <data key="d3">doc-3fb006401d6140fd918a731354a97feb-chunk-001&lt;SEP&gt;doc-3fb006401d6140fd918a731354a97feb-chunk-002</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1781616405</data>
+  <data key="d6"></data>
+</node>
+<node id="FTK_Imager">
+  <data key="d0">FTK_Imager</data>
+  <data key="d1">artifact</data>
+  <data key="d2">A tool used for creating forensic images of digital devices&lt;SEP&gt;A tool for forensic imaging</data>
+  <data key="d3">doc-3fb006401d6140fd918a731354a97feb-chunk-001&lt;SEP&gt;doc-3fb006401d6140fd918a731354a97feb-chunk-002</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1781616405</data>
+  <data key="d6"></data>
+</node>
+<node id="OSINT">
+  <data key="d0">OSINT</data>
+  <data key="d1">method</data>
+  <data key="d2">An intelligence gathering method that uses open sources&lt;SEP&gt;Open Source Intelligence</data>
+  <data key="d3">doc-3fb006401d6140fd918a731354a97feb-chunk-001&lt;SEP&gt;doc-3fb006401d6140fd918a731354a97feb-chunk-002</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1781616405</data>
+  <data key="d6"></data>
+</node>
+<node id="Juízo_da_2ª_Vara_Criminal">
+  <data key="d0">Juízo_da_2ª_Vara_Criminal</data>
+  <data key="d1">organization</data>
+  <data key="d2">A criminal court of the 2nd district</data>
+  <data key="d3">doc-3fb006401d6140fd918a731354a97feb-chunk-001</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1781616405</data>
+  <data key="d6"></data>
+</node>
+<node id="Tribunal_do_Júri">
+  <data key="d0">Tribunal_do_Júri</data>
+  <data key="d1">organization</data>
+  <data key="d2">A jury court</data>
+  <data key="d3">doc-3fb006401d6140fd918a731354a97feb-chunk-001</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1781616405</data>
+  <data key="d6"></data>
+</node>
+<node id="Legislação">
+  <data key="d0">Legislação</data>
+  <data key="d1">concept</data>
+  <data key="d2">Legislation</data>
+  <data key="d3">doc-3fb006401d6140fd918a731354a97feb-chunk-001</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1781616405</data>
+  <data key="d6"></data>
+</node>
+<node id="Artigo_473">
+  <data key="d0">Artigo_473</data>
+  <data key="d1">content</data>
+  <data key="d2">Article 473 of the Code of Criminal Procedure</data>
+  <data key="d3">doc-3fb006401d6140fd918a731354a97feb-chunk-001</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1781616405</data>
+  <data key="d6"></data>
+</node>
+<node id="Artigo_156">
+  <data key="d0">Artigo_156</data>
+  <data key="d1">content</data>
+  <data key="d2">Article 156 of the Code of Criminal Procedure</data>
+  <data key="d3">doc-3fb006401d6140fd918a731354a97feb-chunk-001</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1781616405</data>
+  <data key="d6"></data>
+</node>
+<node id="Perícia_Computacional">
+  <data key="d0">Perícia_Computacional</data>
+  <data key="d1">method</data>
+  <data key="d2">Computer forensics</data>
+  <data key="d3">doc-3fb006401d6140fd918a731354a97feb-chunk-001</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1781616405</data>
+  <data key="d6"></data>
+</node>
+<node id="Normas_ISO/IEC_27037">
+  <data key="d0">Normas_ISO/IEC_27037</data>
+  <data key="d1">content</data>
+  <data key="d2">ISO/IEC 27037 standards for digital evidence</data>
+  <data key="d3">doc-3fb006401d6140fd918a731354a97feb-chunk-001</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1781616405</data>
+  <data key="d6"></data>
+</node>
+<node id="Open_Source_Intelligence">
+  <data key="d0">Open_Source_Intelligence</data>
+  <data key="d1">method</data>
+  <data key="d2">A method of gathering intelligence from open sources</data>
+  <data key="d3">doc-3fb006401d6140fd918a731354a97feb-chunk-001</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1781616405</data>
+  <data key="d6"></data>
+</node>
+<node id="Quesitos">
+  <data key="d0">Quesitos</data>
+  <data key="d1">concept</data>
+  <data key="d2">Questions or inquiries</data>
+  <data key="d3">doc-3fb006401d6140fd918a731354a97feb-chunk-001</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1781616405</data>
+  <data key="d6"></data>
+</node>
+<node id="Metodologia">
+  <data key="d0">Metodologia</data>
+  <data key="d1">concept</data>
+  <data key="d2">Methodology</data>
+  <data key="d3">doc-3fb006401d6140fd918a731354a97feb-chunk-001</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1781616405</data>
+  <data key="d6"></data>
+</node>
+<node id="Ferramentas_Forenses">
+  <data key="d0">Ferramentas_Forenses</data>
+  <data key="d1">artifact</data>
+  <data key="d2">Tools used for forensic analysis&lt;SEP&gt;Forensic tools</data>
+  <data key="d3">doc-3fb006401d6140fd918a731354a97feb-chunk-001&lt;SEP&gt;doc-3fb006401d6140fd918a731354a97feb-chunk-002</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1781616405</data>
+  <data key="d6"></data>
+</node>
+<node id="Relatório_Pericial">
+  <data key="d0">Relatório_Pericial</data>
+  <data key="d1">content</data>
+  <data key="d2">A technical report written by a forensic expert&lt;SEP&gt;A forensic report</data>
+  <data key="d3">doc-3fb006401d6140fd918a731354a97feb-chunk-001&lt;SEP&gt;doc-3fb006401d6140fd918a731354a97feb-chunk-002</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1781616405</data>
+  <data key="d6"></data>
+</node>
+<node id="Ministério_Justiça">
+  <data key="d0">Ministério_Justiça</data>
+  <data key="d1">organization</data>
+  <data key="d2">The Ministry of Justice in Brazil, responsible for justice and public security</data>
+  <data key="d3">doc-3fb006401d6140fd918a731354a97feb-chunk-002</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1781616405</data>
+  <data key="d6"></data>
+</node>
+<node id="Perito">
+  <data key="d0">Perito</data>
+  <data key="d1">person</data>
+  <data key="d2">A forensic expert who analyzes evidence and writes technical reports</data>
+  <data key="d3">doc-3fb006401d6140fd918a731354a97feb-chunk-002</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1781616405</data>
+  <data key="d6"></data>
+</node>
+<node id="Ferrajoli">
+  <data key="d0">Ferrajoli</data>
+  <data key="d1">person</data>
+  <data key="d2">An author who developed the concept of garantismo penal</data>
+  <data key="d3">doc-3fb006401d6140fd918a731354a97feb-chunk-002</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1781616405</data>
+  <data key="d6"></data>
+</node>
+<node id="Teoria_Prova">
+  <data key="d0">Teoria_Prova</data>
+  <data key="d1">concept</data>
+  <data key="d2">A theory related to evidence and proof in legal proceedings</data>
+  <data key="d3">doc-3fb006401d6140fd918a731354a97feb-chunk-002</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1781616405</data>
+  <data key="d6"></data>
+</node>
+<node id="Garantismo_Penal">
+  <data key="d0">Garantismo_Penal</data>
+  <data key="d1">concept</data>
+  <data key="d2">A concept developed by Ferrajoli, related to penal guarantees</data>
+  <data key="d3">doc-3fb006401d6140fd918a731354a97feb-chunk-002</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1781616405</data>
+  <data key="d6"></data>
+</node>
+<node id="Standard_Probatório">
+  <data key="d0">Standard_Probatório</data>
+  <data key="d1">concept</data>
+  <data key="d2">A standard of proof required for conviction</data>
+  <data key="d3">doc-3fb006401d6140fd918a731354a97feb-chunk-002</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1781616405</data>
+  <data key="d6"></data>
+</node>
+<node id="In_Dubio_Pro_Reo">
+  <data key="d0">In_Dubio_Pro_Reo</data>
+  <data key="d1">concept</data>
+  <data key="d2">A principle that requires doubt to be resolved in favor of the defendant</data>
+  <data key="d3">doc-3fb006401d6140fd918a731354a97feb-chunk-002</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1781616405</data>
+  <data key="d6"></data>
+</node>
+<node id="Prova_Indiciária">
+  <data key="d0">Prova_Indiciária</data>
+  <data key="d1">concept</data>
+  <data key="d2">A type of evidence that is indirect or circumstantial</data>
+  <data key="d3">doc-3fb006401d6140fd918a731354a97feb-chunk-002</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1781616405</data>
+  <data key="d6"></data>
+</node>
+<node id="Raciocínio_Abdutivo">
+  <data key="d0">Raciocínio_Abdutivo</data>
+  <data key="d1">method</data>
+  <data key="d2">A method of reasoning that involves making educated guesses based on observations</data>
+  <data key="d3">doc-3fb006401d6140fd918a731354a97feb-chunk-002</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1781616405</data>
+  <data key="d6"></data>
+</node>
+<node id="Peirce">
+  <data key="d0">Peirce</data>
+  <data key="d1">person</data>
+  <data key="d2">A philosopher who developed the concept of abductive reasoning</data>
+  <data key="d3">doc-3fb006401d6140fd918a731354a97feb-chunk-002</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1781616405</data>
+  <data key="d6"></data>
+</node>
+<node id="ANPP">
+  <data key="d0">ANPP</data>
+  <data key="d1">concept</data>
+  <data key="d2">A non-prosecution agreement used in Brazilian law</data>
+  <data key="d3">doc-3fb006401d6140fd918a731354a97feb-chunk-002</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1781616406</data>
+  <data key="d6"></data>
+</node>
+<node id="Pacote_Anticrime">
+  <data key="d0">Pacote_Anticrime</data>
+  <data key="d1">concept</data>
+  <data key="d2">A package of laws aimed at reducing crime in Brazil</data>
+  <data key="d3">doc-3fb006401d6140fd918a731354a97feb-chunk-002</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1781616406</data>
+  <data key="d6"></data>
+</node>
+<node id="Lei_13964/2019">
+  <data key="d0">Lei_13964/2019</data>
+  <data key="d1">content</data>
+  <data key="d2">A Brazilian law that introduced the ANPP</data>
+  <data key="d3">doc-3fb006401d6140fd918a731354a97feb-chunk-002</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1781616406</data>
+  <data key="d6"></data>
+</node>
+<node id="Ministério_Público">
+  <data key="d0">Ministério_Público</data>
+  <data key="d1">organization</data>
+  <data key="d2">The public prosecution office in Brazil</data>
+  <data key="d3">doc-3fb006401d6140fd918a731354a97feb-chunk-002</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1781616406</data>
+  <data key="d6"></data>
+</node>
+<node id="Justiça_Negociada">
+  <data key="d0">Justiça_Negociada</data>
+  <data key="d1">concept</data>
+  <data key="d2">A concept of negotiated justice, which includes the ANPP</data>
+  <data key="d3">doc-3fb006401d6140fd918a731354a97feb-chunk-002</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1781616406</data>
+  <data key="d6"></data>
+</node>
+<node id="Colaboração_Premiada">
+  <data key="d0">Colaboração_Premiada</data>
+  <data key="d1">concept</data>
+  <data key="d2">A concept of collaboration with the prosecution in exchange for benefits</data>
+  <data key="d3">doc-3fb006401d6140fd918a731354a97feb-chunk-002</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1781616406</data>
+  <data key="d6"></data>
+</node>
+<node id="USP">
+  <data key="d0">USP</data>
+  <data key="d1">organization</data>
+  <data key="d2">The University of São Paulo, a Brazilian university</data>
+  <data key="d3">doc-3fb006401d6140fd918a731354a97feb-chunk-002</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1781616406</data>
+  <data key="d6"></data>
+</node>
+<node id="Investigador">
+  <data key="d0">Investigador</data>
+  <data key="d1">person</data>
+  <data key="d2">A person who conducts investigations</data>
+  <data key="d3">doc-3fb006401d6140fd918a731354a97feb-chunk-002</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1781616406</data>
+  <data key="d6"></data>
+</node>
+<node id="Informações_Abertas">
+  <data key="d0">Informações_Abertas</data>
+  <data key="d1">data</data>
+  <data key="d2">Open-source information</data>
+  <data key="d3">doc-3fb006401d6140fd918a731354a97feb-chunk-002</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1781616406</data>
+  <data key="d6"></data>
+</node>
+<node id="Manual">
+  <data key="d0">Manual</data>
+  <data key="d1">content</data>
+  <data key="d2">A document that provides guidance or instructions</data>
+  <data key="d3">doc-3fb006401d6140fd918a731354a97feb-chunk-002</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1781616406</data>
+  <data key="d6"></data>
+</node>
+<node id="Ação_Penal">
+  <data key="d0">Ação_Penal</data>
+  <data key="d1">event</data>
+  <data key="d2">A penal action or lawsuit</data>
+  <data key="d3">doc-3fb006401d6140fd918a731354a97feb-chunk-002</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1781616406</data>
+  <data key="d6"></data>
+</node>
+<node id="Prof.Dr._Antonio_Magalhães_Gomes_Filho">
+  <data key="d0">Prof.Dr._Antonio_Magalhães_Gomes_Filho</data>
+  <data key="d1">person</data>
+  <data key="d2">The author of the document "Teoria da Prova - Fundamentos Epistemológicos"</data>
+  <data key="d3">doc-3fb006401d6140fd918a731354a97feb-chunk-002</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1781616406</data>
+  <data key="d6"></data>
+</node>
+<node id="Grupo_de_Pesquisa_em_Justiça_Negociada_">
+  <data key="d0">Grupo_de_Pesquisa_em_Justiça_Negociada_</data>
+  <data key="d1">organization</data>
+  <data key="d2">A research group at the University of São Paulo</data>
+  <data key="d3">doc-3fb006401d6140fd918a731354a97feb-chunk-002</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1781616406</data>
+  <data key="d6"></data>
+</node>
+<node id="Universidade_de_São_Paulo">
+  <data key="d0">Universidade_de_São_Paulo</data>
+  <data key="d1">organization</data>
+  <data key="d2">A university in Brazil</data>
+  <data key="d3">doc-3fb006401d6140fd918a731354a97feb-chunk-002</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1781616406</data>
+  <data key="d6"></data>
+</node>
+<node id="Lei 12.850/2013">
+  <data key="d0">Lei 12.850/2013</data>
+  <data key="d1">legislação</data>
+  <data key="d2">Lei federal que define organização criminosa e dispõe sobre a investigação criminal, os meios de obtenção da prova, infrações penais correlatas e o procedimento criminal a ser aplicado.</data>
+  <data key="d3">doc-3fb006401d6140fd918a731354a97feb-chunk-000</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1781616406</data>
+  <data key="d6"></data>
+</node>
+<node id="Organização Criminosa">
+  <data key="d0">Organização Criminosa</data>
+  <data key="d1">concept</data>
+  <data key="d2">Grupo de pessoas que se unem para cometer crimes, definido pela Lei 12.850/2013.</data>
+  <data key="d3">doc-3fb006401d6140fd918a731354a97feb-chunk-000</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1781616406</data>
+  <data key="d6"></data>
+</node>
+<node id="Colaboração Premiada">
+  <data key="d0">Colaboração Premiada</data>
+  <data key="d1">method</data>
+  <data key="d2">Meio de obtenção de prova, cujo acordo é celebrado entre o Ministério Público e o colaborador, tendo a sua eficácia sujeita à homologação judicial.</data>
+  <data key="d3">doc-3fb006401d6140fd918a731354a97feb-chunk-000</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1781616406</data>
+  <data key="d6"></data>
+</node>
+<node id="Ação Controlada">
+  <data key="d0">Ação Controlada</data>
+  <data key="d1">method</data>
+  <data key="d2">Técnica investigativa em que a polícia acompanha e controla a remessa de entorpecentes ou outras atividades ilícitas.</data>
+  <data key="d3">doc-3fb006401d6140fd918a731354a97feb-chunk-000</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1781616406</data>
+  <data key="d6"></data>
+</node>
+<node id="Interceptação Telefônica">
+  <data key="d0">Interceptação Telefônica</data>
+  <data key="d1">method</data>
+  <data key="d2">Meio de obtenção de prova, que consiste na escuta e gravação de conversas telefônicas.</data>
+  <data key="d3">doc-3fb006401d6140fd918a731354a97feb-chunk-000</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1781616406</data>
+  <data key="d6"></data>
+</node>
+<node id="Ministério Público">
+  <data key="d0">Ministério Público</data>
+  <data key="d1">organization</data>
+  <data key="d2">Instituição responsável por promover a justiça e defender os interesses da sociedade.</data>
+  <data key="d3">doc-3fb006401d6140fd918a731354a97feb-chunk-000</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1781616406</data>
+  <data key="d6"></data>
+</node>
+<node id="Polícia Federal">
+  <data key="d0">Polícia Federal</data>
+  <data key="d1">organization</data>
+  <data key="d2">Instituição responsável por investigar e combater crimes federais.</data>
+  <data key="d3">doc-3fb006401d6140fd918a731354a97feb-chunk-000</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1781616406</data>
+  <data key="d6"></data>
+</node>
+<node id="STF">
+  <data key="d0">STF</data>
+  <data key="d1">organization</data>
+  <data key="d2">Supremo Tribunal Federal, corte superior do poder judiciário brasileiro.</data>
+  <data key="d3">doc-3fb006401d6140fd918a731354a97feb-chunk-000</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1781616406</data>
+  <data key="d6"></data>
+</node>
+<node id="Min. Dias Toffoli">
+  <data key="d0">Min. Dias Toffoli</data>
+  <data key="d1">person</data>
+  <data key="d2">Ministro do Supremo Tribunal Federal.</data>
+  <data key="d3">doc-3fb006401d6140fd918a731354a97feb-chunk-000</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1781616406</data>
+  <data key="d6"></data>
+</node>
+<node id="HC 127.483">
+  <data key="d0">HC 127.483</data>
+  <data key="d1">content</data>
+  <data key="d2">Habeas corpus impetrado contra decisão monocrática de Ministro do Supremo Tribunal Federal.</data>
+  <data key="d3">doc-3fb006401d6140fd918a731354a97feb-chunk-000</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1781616406</data>
+  <data key="d6"></data>
+</node>
+<node id="Vara Federal Curitiba">
+  <data key="d0">Vara Federal Curitiba</data>
+  <data key="d1">organization</data>
+  <data key="d2">Tribunal federal com jurisdição sobre a cidade de Curitiba.</data>
+  <data key="d3">doc-3fb006401d6140fd918a731354a97feb-chunk-000</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1781616406</data>
+  <data key="d6"></data>
+</node>
+<node id="Departamento de Inteligência Policial">
+  <data key="d0">Departamento de Inteligência Policial</data>
+  <data key="d1">organization</data>
+  <data key="d2">Órgão responsável por realizar análises de inteligência policial.</data>
+  <data key="d3">doc-3fb006401d6140fd918a731354a97feb-chunk-000</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1781616406</data>
+  <data key="d6"></data>
+</node>
+<node id="Operação Integração">
+  <data key="d0">Operação Integração</data>
+  <data key="d1">event</data>
+  <data key="d2">Operação policial que investigou uma rede de tráfico de drogas.</data>
+  <data key="d3">doc-3fb006401d6140fd918a731354a97feb-chunk-000</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1781616406</data>
+  <data key="d6"></data>
+</node>
+<node id="Delegacia de Crimes Organizados">
+  <data key="d0">Delegacia de Crimes Organizados</data>
+  <data key="d1">organization</data>
+  <data key="d2">Unidade policial especializada em combater crimes organizados.</data>
+  <data key="d3">doc-3fb006401d6140fd918a731354a97feb-chunk-000</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1781616406</data>
+  <data key="d6"></data>
+</node>
+<node id="Juízo da 2ª Vara Criminal">
+  <data key="d0">Juízo da 2ª Vara Criminal</data>
+  <data key="d1">organization</data>
+  <data key="d2">Tribunal criminal com jurisdição sobre determinada área.</data>
+  <data key="d3">doc-3fb006401d6140fd918a731354a97feb-chunk-000</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1781616406</data>
+  <data key="d6"></data>
+</node>
+<node id="Juízo da 13ª Vara Federal Criminal de Curitiba/PR">
+  <data key="d0">Juízo da 13ª Vara Federal Criminal de Curitiba/PR</data>
+  <data key="d1">organization</data>
+  <data key="d2">Tribunal federal com jurisdição sobre a cidade de Curitiba.</data>
+  <data key="d3">doc-3fb006401d6140fd918a731354a97feb-chunk-000</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1781616406</data>
+  <data key="d6"></data>
+</node>
+<node id="Ministério Público Federal">
+  <data key="d0">Ministério Público Federal</data>
+  <data key="d1">organization</data>
+  <data key="d2">Instituição responsável por promover a justiça e defender os interesses da sociedade em nível federal.</data>
+  <data key="d3">doc-3fb006401d6140fd918a731354a97feb-chunk-000</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1781616406</data>
+  <data key="d6"></data>
+</node>
+<node id="Acordo de Colaboração Premiada">
+  <data key="d0">Acordo de Colaboração Premiada</data>
+  <data key="d1">content</data>
+  <data key="d2">Documento que formaliza a colaboração premiada entre o Ministério Público e o colaborador.</data>
+  <data key="d3">doc-3fb006401d6140fd918a731354a97feb-chunk-000</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1781616406</data>
+  <data key="d6"></data>
+</node>
+<node id="Sigilo Financeiro">
+  <data key="d0">Sigilo Financeiro</data>
+  <data key="d1">concept</data>
+  <data key="d2">Proteção dos dados financeiros de uma pessoa ou entidade.</data>
+  <data key="d3">doc-3fb006401d6140fd918a731354a97feb-chunk-000</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1781616406</data>
+  <data key="d6"></data>
+</node>
+<node id="Sigilo Bancário">
+  <data key="d0">Sigilo Bancário</data>
+  <data key="d1">concept</data>
+  <data key="d2">Proteção dos dados bancários de uma pessoa ou entidade.</data>
+  <data key="d3">doc-3fb006401d6140fd918a731354a97feb-chunk-000</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1781616406</data>
+  <data key="d6"></data>
+</node>
+<node id="Sigilo Fiscal">
+  <data key="d0">Sigilo Fiscal</data>
+  <data key="d1">concept</data>
+  <data key="d2">Proteção dos dados fiscais de uma pessoa ou entidade.</data>
+  <data key="d3">doc-3fb006401d6140fd918a731354a97feb-chunk-000</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1781616406</data>
+  <data key="d6"></data>
+</node>
+<node id="Organização_Criminosa">
+  <data key="d0">Organização_Criminosa</data>
+  <data key="d3">doc-3fb006401d6140fd918a731354a97feb-chunk-001</data>
+  <data key="d2">The Delegacia Crimes Organizados investigates organized crime</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1781616406</data>
+  <data key="d6"></data>
+</node>
+<node id="Convicção_Além_Dúvida">
+  <data key="d0">Convicção_Além_Dúvida</data>
+  <data key="d3">doc-3fb006401d6140fd918a731354a97feb-chunk-002</data>
+  <data key="d2">The standard of proof requires conviction beyond reasonable doubt</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1781616406</data>
+  <data key="d6"></data>
+</node>
+<node id="Investigação">
+  <data key="d0">Investigação</data>
+  <data key="d3">doc-3fb006401d6140fd918a731354a97feb-chunk-000</data>
+  <data key="d2">A ação controlada auxilia e apoia a investigação.</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1781616406</data>
+  <data key="d6"></data>
+</node>
+<node id="Homologação Judicial">
+  <data key="d0">Homologação Judicial</data>
+  <data key="d3">doc-3fb006401d6140fd918a731354a97feb-chunk-000</data>
+  <data key="d2">A colaboração premiada sujeita-se à homologação judicial.</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1781616406</data>
+  <data key="d6"></data>
+</node>
+<edge source="Delegacia_Crimes_Organizados" target="Organização_Criminosa">
+  <data key="d7">1.0</data>
+  <data key="d8">The Delegacia Crimes Organizados investigates organized crime</data>
+  <data key="d9">Investigation,Operation</data>
+  <data key="d10">doc-3fb006401d6140fd918a731354a97feb-chunk-001</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1781616406</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Delegacia_Crimes_Organizados" target="Juízo_da_2ª_Vara_Criminal">
+  <data key="d7">1.0</data>
+  <data key="d8">The Delegacia Crimes Organizados is authorized by the Juízo da 2ª Vara Criminal</data>
+  <data key="d9">Authorization,Investigation</data>
+  <data key="d10">doc-3fb006401d6140fd918a731354a97feb-chunk-001</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1781616406</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Tráfico_Drogas" target="Lei_11343/06">
+  <data key="d7">1.0</data>
+  <data key="d8">Lei 11343/06 legislates against drug trafficking</data>
+  <data key="d9">Criminalization,Legislation</data>
+  <data key="d10">doc-3fb006401d6140fd918a731354a97feb-chunk-001</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1781616406</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Lavagem_Dinheiro" target="Lei_9613/98">
+  <data key="d7">1.0</data>
+  <data key="d8">Lei 9613/98 legislates against money laundering</data>
+  <data key="d9">Criminalization,Legislation</data>
+  <data key="d10">doc-3fb006401d6140fd918a731354a97feb-chunk-001</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1781616406</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Criptomoedas" target="Marcos_Aurélio_Silva">
+  <data key="d7">1.0</data>
+  <data key="d8">Marcos Aurélio Silva used cryptocurrencies to hide assets</data>
+  <data key="d9">Hiding,Usage</data>
+  <data key="d10">doc-3fb006401d6140fd918a731354a97feb-chunk-001</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1781616406</data>
+  <data key="d13"></data>
+</edge>
+<edge source="CNJ" target="Prova_Digital">
+  <data key="d7">1.0</data>
+  <data key="d8">CNJ regulates digital evidence</data>
+  <data key="d9">Guidance,Regulation</data>
+  <data key="d10">doc-3fb006401d6140fd918a731354a97feb-chunk-001</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1781616406</data>
+  <data key="d13"></data>
+</edge>
+<edge source="CNJ" target="Resolução_345/2020">
+  <data key="d7">1.0</data>
+  <data key="d8">CNJ published the resolution 345/2020</data>
+  <data key="d9">Guidance,Publication</data>
+  <data key="d10">doc-3fb006401d6140fd918a731354a97feb-chunk-001</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1781616406</data>
+  <data key="d13"></data>
+</edge>
+<edge source="CNJ" target="Normas_ISO/IEC_27037">
+  <data key="d7">1.0</data>
+  <data key="d8">CNJ adopts ISO/IEC 27037 standards</data>
+  <data key="d9">Adoption,Regulation</data>
+  <data key="d10">doc-3fb006401d6140fd918a731354a97feb-chunk-001</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1781616406</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Prova_Digital" target="CPP">
+  <data key="d7">1.0</data>
+  <data key="d8">CPP defines and regulates digital evidence</data>
+  <data key="d9">Definition,Regulation</data>
+  <data key="d10">doc-3fb006401d6140fd918a731354a97feb-chunk-001</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1781616406</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Marcos_Aurélio_Silva" target="TRF-4">
+  <data key="d7">1.0</data>
+  <data key="d8">TRF-4 convicted Marcos Aurélio Silva</data>
+  <data key="d9">Conviction,Judgment</data>
+  <data key="d10">doc-3fb006401d6140fd918a731354a97feb-chunk-001</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1781616406</data>
+  <data key="d13"></data>
+</edge>
+<edge source="TRF-4" target="Lei_9613/98">
+  <data key="d7">1.0</data>
+  <data key="d8">TRF-4 applies Lei 9613/98 in judgment</data>
+  <data key="d9">Application,Judgment</data>
+  <data key="d10">doc-3fb006401d6140fd918a731354a97feb-chunk-001</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1781616406</data>
+  <data key="d13"></data>
+</edge>
+<edge source="USDT" target="CVM">
+  <data key="d7">1.0</data>
+  <data key="d8">CVM regulates USDT</data>
+  <data key="d9">Regulation,Supervision</data>
+  <data key="d10">doc-3fb006401d6140fd918a731354a97feb-chunk-001</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1781616406</data>
+  <data key="d13"></data>
+</edge>
+<edge source="SENASP" target="Ministério_da_Justiça">
+  <data key="d7">1.0</data>
+  <data key="d8">SENASP is associated with the Ministry of Justice</data>
+  <data key="d9">Association,Creation</data>
+  <data key="d10">doc-3fb006401d6140fd918a731354a97feb-chunk-001</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1781616406</data>
+  <data key="d13"></data>
+</edge>
+<edge source="SENASP" target="Autopsy">
+  <data key="d7">1.0</data>
+  <data key="d8">SENASP uses Autopsy for investigation</data>
+  <data key="d9">Investigation,Usage</data>
+  <data key="d10">doc-3fb006401d6140fd918a731354a97feb-chunk-001</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1781616406</data>
+  <data key="d13"></data>
+</edge>
+<edge source="SENASP" target="Relatório_Pericial">
+  <data key="d7">1.0</data>
+  <data key="d8">SENASP publishes or creates technical reports</data>
+  <data key="d9">creation,publication</data>
+  <data key="d10">doc-3fb006401d6140fd918a731354a97feb-chunk-002</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1781616406</data>
+  <data key="d13"></data>
+</edge>
+<edge source="SENASP" target="Manual">
+  <data key="d7">1.0</data>
+  <data key="d8">SENASP publishes a manual</data>
+  <data key="d9">creation,publication</data>
+  <data key="d10">doc-3fb006401d6140fd918a731354a97feb-chunk-002</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1781616406</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Ministério_da_Justiça" target="Open_Source_Intelligence">
+  <data key="d7">1.0</data>
+  <data key="d8">The Ministry of Justice adopts Open Source Intelligence as a method</data>
+  <data key="d9">Adoption,Method</data>
+  <data key="d10">doc-3fb006401d6140fd918a731354a97feb-chunk-001</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1781616406</data>
+  <data key="d13"></data>
+</edge>
+<edge source="OSINT" target="Informações_Abertas">
+  <data key="d7">1.0</data>
+  <data key="d8">OSINT involves collecting open-source information</data>
+  <data key="d9">collection,gathering</data>
+  <data key="d10">doc-3fb006401d6140fd918a731354a97feb-chunk-002</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1781616406</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Ferramentas_Forenses" target="Investigador">
+  <data key="d7">1.0</data>
+  <data key="d8">An investigator uses forensic tools</data>
+  <data key="d9">application,usage</data>
+  <data key="d10">doc-3fb006401d6140fd918a731354a97feb-chunk-002</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1781616406</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Relatório_Pericial" target="Perito">
+  <data key="d7">1.0</data>
+  <data key="d8">A perito writes and creates technical reports</data>
+  <data key="d9">authorship,creation</data>
+  <data key="d10">doc-3fb006401d6140fd918a731354a97feb-chunk-002</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1781616406</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Ferrajoli" target="Garantismo_Penal">
+  <data key="d7">1.0</data>
+  <data key="d8">Ferrajoli developed the concept of garantismo penal</data>
+  <data key="d9">authorship,development</data>
+  <data key="d10">doc-3fb006401d6140fd918a731354a97feb-chunk-002</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1781616406</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Teoria_Prova" target="Prof.Dr._Antonio_Magalhães_Gomes_Filho">
+  <data key="d7">1.0</data>
+  <data key="d8">Prof. Dr. Antonio Magalhães Gomes Filho is the author of "Teoria da Prova"</data>
+  <data key="d9">authorship,creation</data>
+  <data key="d10">doc-3fb006401d6140fd918a731354a97feb-chunk-002</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1781616406</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Standard_Probatório" target="Convicção_Além_Dúvida">
+  <data key="d7">1.0</data>
+  <data key="d8">The standard of proof requires conviction beyond reasonable doubt</data>
+  <data key="d9">necessity,requirement</data>
+  <data key="d10">doc-3fb006401d6140fd918a731354a97feb-chunk-002</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1781616406</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Prova_Indiciária" target="Raciocínio_Abdutivo">
+  <data key="d7">1.0</data>
+  <data key="d8">Indirect evidence uses abductive reasoning</data>
+  <data key="d9">application,usage</data>
+  <data key="d10">doc-3fb006401d6140fd918a731354a97feb-chunk-002</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1781616406</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Raciocínio_Abdutivo" target="Peirce">
+  <data key="d7">1.0</data>
+  <data key="d8">Peirce developed the concept of abductive reasoning</data>
+  <data key="d9">authorship,development</data>
+  <data key="d10">doc-3fb006401d6140fd918a731354a97feb-chunk-002</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1781616406</data>
+  <data key="d13"></data>
+</edge>
+<edge source="ANPP" target="Lei_13964/2019">
+  <data key="d7">1.0</data>
+  <data key="d8">The law introduced the ANPP</data>
+  <data key="d9">creation,introduction</data>
+  <data key="d10">doc-3fb006401d6140fd918a731354a97feb-chunk-002</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1781616406</data>
+  <data key="d13"></data>
+</edge>
+<edge source="ANPP" target="Ministério_Público">
+  <data key="d7">1.0</data>
+  <data key="d8">The public prosecution office celebrates the ANPP</data>
+  <data key="d9">agreement,celebration</data>
+  <data key="d10">doc-3fb006401d6140fd918a731354a97feb-chunk-002</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1781616406</data>
+  <data key="d13"></data>
+</edge>
+<edge source="ANPP" target="Colaboração_Premiada">
+  <data key="d7">1.0</data>
+  <data key="d8">ANPP differs from collaboration with the prosecution</data>
+  <data key="d9">difference,distinction</data>
+  <data key="d10">doc-3fb006401d6140fd918a731354a97feb-chunk-002</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1781616406</data>
+  <data key="d13"></data>
+</edge>
+<edge source="ANPP" target="Ação_Penal">
+  <data key="d7">1.0</data>
+  <data key="d8">ANPP aims to prevent penal actions</data>
+  <data key="d9">avoidance,prevention</data>
+  <data key="d10">doc-3fb006401d6140fd918a731354a97feb-chunk-002</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1781616406</data>
+  <data key="d13"></data>
+</edge>
+<edge source="ANPP" target="Grupo_de_Pesquisa_em_Justiça_Negociada_">
+  <data key="d7">1.0</data>
+  <data key="d8">The research group studies the ANPP</data>
+  <data key="d9">analysis,study</data>
+  <data key="d10">doc-3fb006401d6140fd918a731354a97feb-chunk-002</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1781616406</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Lei 12.850/2013" target="Organização Criminosa">
+  <data key="d7">1.0</data>
+  <data key="d8">A Lei 12.850/2013 define organização criminosa e dispõe sobre a investigação criminal.</data>
+  <data key="d9">define,dispõe sobre</data>
+  <data key="d10">doc-3fb006401d6140fd918a731354a97feb-chunk-000</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1781616406</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Colaboração Premiada" target="Ministério Público">
+  <data key="d7">1.0</data>
+  <data key="d8">O Ministério Público firma e celebra acordos de colaboração premiada.</data>
+  <data key="d9">celebra,firma</data>
+  <data key="d10">doc-3fb006401d6140fd918a731354a97feb-chunk-000</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1781616406</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Colaboração Premiada" target="Homologação Judicial">
+  <data key="d7">1.0</data>
+  <data key="d8">A colaboração premiada sujeita-se à homologação judicial.</data>
+  <data key="d9">depende,sujeita</data>
+  <data key="d10">doc-3fb006401d6140fd918a731354a97feb-chunk-000</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1781616406</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Ação Controlada" target="Investigação">
+  <data key="d7">1.0</data>
+  <data key="d8">A ação controlada auxilia e apoia a investigação.</data>
+  <data key="d9">apoia,auxilia</data>
+  <data key="d10">doc-3fb006401d6140fd918a731354a97feb-chunk-000</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1781616406</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Interceptação Telefônica" target="Investigação">
+  <data key="d7">1.0</data>
+  <data key="d8">A interceptação telefônica auxilia e apoia a investigação.</data>
+  <data key="d9">apoia,auxilia</data>
+  <data key="d10">doc-3fb006401d6140fd918a731354a97feb-chunk-000</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1781616406</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Polícia Federal" target="Departamento de Inteligência Policial">
+  <data key="d7">1.0</data>
+  <data key="d8">A Polícia Federal coopera e auxilia o Departamento de Inteligência Policial.</data>
+  <data key="d9">auxilia,coopera</data>
+  <data key="d10">doc-3fb006401d6140fd918a731354a97feb-chunk-000</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1781616406</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Polícia Federal" target="Investigação">
+  <data key="d7">1.0</data>
+  <data key="d8">A Polícia Federal realiza e executa investigações.</data>
+  <data key="d9">executa,realiza</data>
+  <data key="d10">doc-3fb006401d6140fd918a731354a97feb-chunk-000</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1781616406</data>
+  <data key="d13"></data>
+</edge>
+<edge source="STF" target="HC 127.483">
+  <data key="d7">1.0</data>
+  <data key="d8">O STF julga e decide sobre o habeas corpus 127.483.</data>
+  <data key="d9">decide,julga</data>
+  <data key="d10">doc-3fb006401d6140fd918a731354a97feb-chunk-000</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1781616406</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Departamento de Inteligência Policial" target="Operação Integração">
+  <data key="d7">1.0</data>
+  <data key="d8">O Departamento de Inteligência Policial realiza e executa a Operação Integração.</data>
+  <data key="d9">executa,realiza</data>
+  <data key="d10">doc-3fb006401d6140fd918a731354a97feb-chunk-000</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1781616406</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Departamento de Inteligência Policial" target="Delegacia de Crimes Organizados">
+  <data key="d7">1.0</data>
+  <data key="d8">O Departamento de Inteligência Policial coopera e auxilia a Delegacia de Crimes Organizados.</data>
+  <data key="d9">auxilia,coopera</data>
+  <data key="d10">doc-3fb006401d6140fd918a731354a97feb-chunk-000</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1781616406</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Juízo da 13ª Vara Federal Criminal de Curitiba/PR" target="Acordo de Colaboração Premiada">
+  <data key="d7">1.0</data>
+  <data key="d8">O Juízo da 13ª Vara Federal Criminal de Curitiba/PR homologa e autoriza acordos de colaboração premiada.</data>
+  <data key="d9">autoriza,homologa</data>
+  <data key="d10">doc-3fb006401d6140fd918a731354a97feb-chunk-000</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1781616406</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Ministério Público Federal" target="Acordo de Colaboração Premiada">
+  <data key="d7">1.0</data>
+  <data key="d8">O Ministério Público Federal firma e celebra acordos de colaboração premiada.</data>
+  <data key="d9">celebra,firma</data>
+  <data key="d10">doc-3fb006401d6140fd918a731354a97feb-chunk-000</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1781616406</data>
+  <data key="d13"></data>
+</edge>
+</graph></graphml>

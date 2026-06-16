@@ -1,0 +1,820 @@
+{
+  "Delegacia_Crimes_Organizados": {
+    "chunk_ids": [
+      "doc-3fb006401d6140fd918a731354a97feb-chunk-001"
+    ],
+    "count": 1,
+    "create_time": 1781616405,
+    "update_time": 1781616405,
+    "_id": "Delegacia_Crimes_Organizados"
+  },
+  "Operação_Integração": {
+    "chunk_ids": [
+      "doc-3fb006401d6140fd918a731354a97feb-chunk-001"
+    ],
+    "count": 1,
+    "create_time": 1781616405,
+    "update_time": 1781616405,
+    "_id": "Operação_Integração"
+  },
+  "Vara_Criminal": {
+    "chunk_ids": [
+      "doc-3fb006401d6140fd918a731354a97feb-chunk-001"
+    ],
+    "count": 1,
+    "create_time": 1781616405,
+    "update_time": 1781616405,
+    "_id": "Vara_Criminal"
+  },
+  "Ação_Controlada": {
+    "chunk_ids": [
+      "doc-3fb006401d6140fd918a731354a97feb-chunk-001"
+    ],
+    "count": 1,
+    "create_time": 1781616405,
+    "update_time": 1781616405,
+    "_id": "Ação_Controlada"
+  },
+  "Tráfico_Drogas": {
+    "chunk_ids": [
+      "doc-3fb006401d6140fd918a731354a97feb-chunk-001"
+    ],
+    "count": 1,
+    "create_time": 1781616405,
+    "update_time": 1781616405,
+    "_id": "Tráfico_Drogas"
+  },
+  "Lavagem_Dinheiro": {
+    "chunk_ids": [
+      "doc-3fb006401d6140fd918a731354a97feb-chunk-001"
+    ],
+    "count": 1,
+    "create_time": 1781616405,
+    "update_time": 1781616405,
+    "_id": "Lavagem_Dinheiro"
+  },
+  "Criptomoedas": {
+    "chunk_ids": [
+      "doc-3fb006401d6140fd918a731354a97feb-chunk-001"
+    ],
+    "count": 1,
+    "create_time": 1781616405,
+    "update_time": 1781616405,
+    "_id": "Criptomoedas"
+  },
+  "CNJ": {
+    "chunk_ids": [
+      "doc-3fb006401d6140fd918a731354a97feb-chunk-001"
+    ],
+    "count": 1,
+    "create_time": 1781616405,
+    "update_time": 1781616405,
+    "_id": "CNJ"
+  },
+  "Resolução_345/2020": {
+    "chunk_ids": [
+      "doc-3fb006401d6140fd918a731354a97feb-chunk-001"
+    ],
+    "count": 1,
+    "create_time": 1781616405,
+    "update_time": 1781616405,
+    "_id": "Resolução_345/2020"
+  },
+  "Prova_Digital": {
+    "chunk_ids": [
+      "doc-3fb006401d6140fd918a731354a97feb-chunk-001"
+    ],
+    "count": 1,
+    "create_time": 1781616405,
+    "update_time": 1781616405,
+    "_id": "Prova_Digital"
+  },
+  "Cadeia_de_Custódia": {
+    "chunk_ids": [
+      "doc-3fb006401d6140fd918a731354a97feb-chunk-001"
+    ],
+    "count": 1,
+    "create_time": 1781616405,
+    "update_time": 1781616405,
+    "_id": "Cadeia_de_Custódia"
+  },
+  "Perícia_Forense": {
+    "chunk_ids": [
+      "doc-3fb006401d6140fd918a731354a97feb-chunk-001"
+    ],
+    "count": 1,
+    "create_time": 1781616405,
+    "update_time": 1781616405,
+    "_id": "Perícia_Forense"
+  },
+  "Hash_Criptográfico": {
+    "chunk_ids": [
+      "doc-3fb006401d6140fd918a731354a97feb-chunk-001"
+    ],
+    "count": 1,
+    "create_time": 1781616405,
+    "update_time": 1781616405,
+    "_id": "Hash_Criptográfico"
+  },
+  "CPP": {
+    "chunk_ids": [
+      "doc-3fb006401d6140fd918a731354a97feb-chunk-001"
+    ],
+    "count": 1,
+    "create_time": 1781616405,
+    "update_time": 1781616405,
+    "_id": "CPP"
+  },
+  "Marcos_Aurélio_Silva": {
+    "chunk_ids": [
+      "doc-3fb006401d6140fd918a731354a97feb-chunk-001"
+    ],
+    "count": 1,
+    "create_time": 1781616405,
+    "update_time": 1781616405,
+    "_id": "Marcos_Aurélio_Silva"
+  },
+  "TRF-4": {
+    "chunk_ids": [
+      "doc-3fb006401d6140fd918a731354a97feb-chunk-001"
+    ],
+    "count": 1,
+    "create_time": 1781616405,
+    "update_time": 1781616405,
+    "_id": "TRF-4"
+  },
+  "Bitcoin": {
+    "chunk_ids": [
+      "doc-3fb006401d6140fd918a731354a97feb-chunk-001"
+    ],
+    "count": 1,
+    "create_time": 1781616405,
+    "update_time": 1781616405,
+    "_id": "Bitcoin"
+  },
+  "Monero": {
+    "chunk_ids": [
+      "doc-3fb006401d6140fd918a731354a97feb-chunk-001"
+    ],
+    "count": 1,
+    "create_time": 1781616405,
+    "update_time": 1781616405,
+    "_id": "Monero"
+  },
+  "USDT": {
+    "chunk_ids": [
+      "doc-3fb006401d6140fd918a731354a97feb-chunk-001"
+    ],
+    "count": 1,
+    "create_time": 1781616405,
+    "update_time": 1781616405,
+    "_id": "USDT"
+  },
+  "CVM": {
+    "chunk_ids": [
+      "doc-3fb006401d6140fd918a731354a97feb-chunk-001"
+    ],
+    "count": 1,
+    "create_time": 1781616405,
+    "update_time": 1781616405,
+    "_id": "CVM"
+  },
+  "Lei_9613/98": {
+    "chunk_ids": [
+      "doc-3fb006401d6140fd918a731354a97feb-chunk-001"
+    ],
+    "count": 1,
+    "create_time": 1781616405,
+    "update_time": 1781616405,
+    "_id": "Lei_9613/98"
+  },
+  "Lei_11343/06": {
+    "chunk_ids": [
+      "doc-3fb006401d6140fd918a731354a97feb-chunk-001"
+    ],
+    "count": 1,
+    "create_time": 1781616405,
+    "update_time": 1781616405,
+    "_id": "Lei_11343/06"
+  },
+  "SENASP": {
+    "chunk_ids": [
+      "doc-3fb006401d6140fd918a731354a97feb-chunk-001",
+      "doc-3fb006401d6140fd918a731354a97feb-chunk-002"
+    ],
+    "count": 2,
+    "create_time": 1781616405,
+    "update_time": 1781616405,
+    "_id": "SENASP"
+  },
+  "Ministério_da_Justiça": {
+    "chunk_ids": [
+      "doc-3fb006401d6140fd918a731354a97feb-chunk-001"
+    ],
+    "count": 1,
+    "create_time": 1781616405,
+    "update_time": 1781616405,
+    "_id": "Ministério_da_Justiça"
+  },
+  "Autopsy": {
+    "chunk_ids": [
+      "doc-3fb006401d6140fd918a731354a97feb-chunk-001",
+      "doc-3fb006401d6140fd918a731354a97feb-chunk-002"
+    ],
+    "count": 2,
+    "create_time": 1781616405,
+    "update_time": 1781616405,
+    "_id": "Autopsy"
+  },
+  "Wireshark": {
+    "chunk_ids": [
+      "doc-3fb006401d6140fd918a731354a97feb-chunk-001",
+      "doc-3fb006401d6140fd918a731354a97feb-chunk-002"
+    ],
+    "count": 2,
+    "create_time": 1781616405,
+    "update_time": 1781616405,
+    "_id": "Wireshark"
+  },
+  "Cellebrite": {
+    "chunk_ids": [
+      "doc-3fb006401d6140fd918a731354a97feb-chunk-001",
+      "doc-3fb006401d6140fd918a731354a97feb-chunk-002"
+    ],
+    "count": 2,
+    "create_time": 1781616405,
+    "update_time": 1781616405,
+    "_id": "Cellebrite"
+  },
+  "FTK_Imager": {
+    "chunk_ids": [
+      "doc-3fb006401d6140fd918a731354a97feb-chunk-001",
+      "doc-3fb006401d6140fd918a731354a97feb-chunk-002"
+    ],
+    "count": 2,
+    "create_time": 1781616405,
+    "update_time": 1781616405,
+    "_id": "FTK_Imager"
+  },
+  "OSINT": {
+    "chunk_ids": [
+      "doc-3fb006401d6140fd918a731354a97feb-chunk-001",
+      "doc-3fb006401d6140fd918a731354a97feb-chunk-002"
+    ],
+    "count": 2,
+    "create_time": 1781616405,
+    "update_time": 1781616405,
+    "_id": "OSINT"
+  },
+  "Juízo_da_2ª_Vara_Criminal": {
+    "chunk_ids": [
+      "doc-3fb006401d6140fd918a731354a97feb-chunk-001"
+    ],
+    "count": 1,
+    "create_time": 1781616405,
+    "update_time": 1781616405,
+    "_id": "Juízo_da_2ª_Vara_Criminal"
+  },
+  "Tribunal_do_Júri": {
+    "chunk_ids": [
+      "doc-3fb006401d6140fd918a731354a97feb-chunk-001"
+    ],
+    "count": 1,
+    "create_time": 1781616405,
+    "update_time": 1781616405,
+    "_id": "Tribunal_do_Júri"
+  },
+  "Legislação": {
+    "chunk_ids": [
+      "doc-3fb006401d6140fd918a731354a97feb-chunk-001"
+    ],
+    "count": 1,
+    "create_time": 1781616405,
+    "update_time": 1781616405,
+    "_id": "Legislação"
+  },
+  "Artigo_473": {
+    "chunk_ids": [
+      "doc-3fb006401d6140fd918a731354a97feb-chunk-001"
+    ],
+    "count": 1,
+    "create_time": 1781616405,
+    "update_time": 1781616405,
+    "_id": "Artigo_473"
+  },
+  "Artigo_156": {
+    "chunk_ids": [
+      "doc-3fb006401d6140fd918a731354a97feb-chunk-001"
+    ],
+    "count": 1,
+    "create_time": 1781616405,
+    "update_time": 1781616405,
+    "_id": "Artigo_156"
+  },
+  "Perícia_Computacional": {
+    "chunk_ids": [
+      "doc-3fb006401d6140fd918a731354a97feb-chunk-001"
+    ],
+    "count": 1,
+    "create_time": 1781616405,
+    "update_time": 1781616405,
+    "_id": "Perícia_Computacional"
+  },
+  "Normas_ISO/IEC_27037": {
+    "chunk_ids": [
+      "doc-3fb006401d6140fd918a731354a97feb-chunk-001"
+    ],
+    "count": 1,
+    "create_time": 1781616405,
+    "update_time": 1781616405,
+    "_id": "Normas_ISO/IEC_27037"
+  },
+  "Open_Source_Intelligence": {
+    "chunk_ids": [
+      "doc-3fb006401d6140fd918a731354a97feb-chunk-001"
+    ],
+    "count": 1,
+    "create_time": 1781616405,
+    "update_time": 1781616405,
+    "_id": "Open_Source_Intelligence"
+  },
+  "Quesitos": {
+    "chunk_ids": [
+      "doc-3fb006401d6140fd918a731354a97feb-chunk-001"
+    ],
+    "count": 1,
+    "create_time": 1781616405,
+    "update_time": 1781616405,
+    "_id": "Quesitos"
+  },
+  "Metodologia": {
+    "chunk_ids": [
+      "doc-3fb006401d6140fd918a731354a97feb-chunk-001"
+    ],
+    "count": 1,
+    "create_time": 1781616405,
+    "update_time": 1781616405,
+    "_id": "Metodologia"
+  },
+  "Ferramentas_Forenses": {
+    "chunk_ids": [
+      "doc-3fb006401d6140fd918a731354a97feb-chunk-001",
+      "doc-3fb006401d6140fd918a731354a97feb-chunk-002"
+    ],
+    "count": 2,
+    "create_time": 1781616405,
+    "update_time": 1781616405,
+    "_id": "Ferramentas_Forenses"
+  },
+  "Relatório_Pericial": {
+    "chunk_ids": [
+      "doc-3fb006401d6140fd918a731354a97feb-chunk-001",
+      "doc-3fb006401d6140fd918a731354a97feb-chunk-002"
+    ],
+    "count": 2,
+    "create_time": 1781616405,
+    "update_time": 1781616405,
+    "_id": "Relatório_Pericial"
+  },
+  "Ministério_Justiça": {
+    "chunk_ids": [
+      "doc-3fb006401d6140fd918a731354a97feb-chunk-002"
+    ],
+    "count": 1,
+    "create_time": 1781616405,
+    "update_time": 1781616405,
+    "_id": "Ministério_Justiça"
+  },
+  "Perito": {
+    "chunk_ids": [
+      "doc-3fb006401d6140fd918a731354a97feb-chunk-002"
+    ],
+    "count": 1,
+    "create_time": 1781616405,
+    "update_time": 1781616405,
+    "_id": "Perito"
+  },
+  "Ferrajoli": {
+    "chunk_ids": [
+      "doc-3fb006401d6140fd918a731354a97feb-chunk-002"
+    ],
+    "count": 1,
+    "create_time": 1781616405,
+    "update_time": 1781616405,
+    "_id": "Ferrajoli"
+  },
+  "Teoria_Prova": {
+    "chunk_ids": [
+      "doc-3fb006401d6140fd918a731354a97feb-chunk-002"
+    ],
+    "count": 1,
+    "create_time": 1781616405,
+    "update_time": 1781616405,
+    "_id": "Teoria_Prova"
+  },
+  "Garantismo_Penal": {
+    "chunk_ids": [
+      "doc-3fb006401d6140fd918a731354a97feb-chunk-002"
+    ],
+    "count": 1,
+    "create_time": 1781616405,
+    "update_time": 1781616405,
+    "_id": "Garantismo_Penal"
+  },
+  "Standard_Probatório": {
+    "chunk_ids": [
+      "doc-3fb006401d6140fd918a731354a97feb-chunk-002"
+    ],
+    "count": 1,
+    "create_time": 1781616405,
+    "update_time": 1781616405,
+    "_id": "Standard_Probatório"
+  },
+  "In_Dubio_Pro_Reo": {
+    "chunk_ids": [
+      "doc-3fb006401d6140fd918a731354a97feb-chunk-002"
+    ],
+    "count": 1,
+    "create_time": 1781616405,
+    "update_time": 1781616405,
+    "_id": "In_Dubio_Pro_Reo"
+  },
+  "Prova_Indiciária": {
+    "chunk_ids": [
+      "doc-3fb006401d6140fd918a731354a97feb-chunk-002"
+    ],
+    "count": 1,
+    "create_time": 1781616405,
+    "update_time": 1781616405,
+    "_id": "Prova_Indiciária"
+  },
+  "Raciocínio_Abdutivo": {
+    "chunk_ids": [
+      "doc-3fb006401d6140fd918a731354a97feb-chunk-002"
+    ],
+    "count": 1,
+    "create_time": 1781616405,
+    "update_time": 1781616405,
+    "_id": "Raciocínio_Abdutivo"
+  },
+  "Peirce": {
+    "chunk_ids": [
+      "doc-3fb006401d6140fd918a731354a97feb-chunk-002"
+    ],
+    "count": 1,
+    "create_time": 1781616405,
+    "update_time": 1781616405,
+    "_id": "Peirce"
+  },
+  "ANPP": {
+    "chunk_ids": [
+      "doc-3fb006401d6140fd918a731354a97feb-chunk-002"
+    ],
+    "count": 1,
+    "create_time": 1781616405,
+    "update_time": 1781616405,
+    "_id": "ANPP"
+  },
+  "Pacote_Anticrime": {
+    "chunk_ids": [
+      "doc-3fb006401d6140fd918a731354a97feb-chunk-002"
+    ],
+    "count": 1,
+    "create_time": 1781616405,
+    "update_time": 1781616405,
+    "_id": "Pacote_Anticrime"
+  },
+  "Lei_13964/2019": {
+    "chunk_ids": [
+      "doc-3fb006401d6140fd918a731354a97feb-chunk-002"
+    ],
+    "count": 1,
+    "create_time": 1781616406,
+    "update_time": 1781616406,
+    "_id": "Lei_13964/2019"
+  },
+  "Ministério_Público": {
+    "chunk_ids": [
+      "doc-3fb006401d6140fd918a731354a97feb-chunk-002"
+    ],
+    "count": 1,
+    "create_time": 1781616406,
+    "update_time": 1781616406,
+    "_id": "Ministério_Público"
+  },
+  "Justiça_Negociada": {
+    "chunk_ids": [
+      "doc-3fb006401d6140fd918a731354a97feb-chunk-002"
+    ],
+    "count": 1,
+    "create_time": 1781616406,
+    "update_time": 1781616406,
+    "_id": "Justiça_Negociada"
+  },
+  "Colaboração_Premiada": {
+    "chunk_ids": [
+      "doc-3fb006401d6140fd918a731354a97feb-chunk-002"
+    ],
+    "count": 1,
+    "create_time": 1781616406,
+    "update_time": 1781616406,
+    "_id": "Colaboração_Premiada"
+  },
+  "USP": {
+    "chunk_ids": [
+      "doc-3fb006401d6140fd918a731354a97feb-chunk-002"
+    ],
+    "count": 1,
+    "create_time": 1781616406,
+    "update_time": 1781616406,
+    "_id": "USP"
+  },
+  "Investigador": {
+    "chunk_ids": [
+      "doc-3fb006401d6140fd918a731354a97feb-chunk-002"
+    ],
+    "count": 1,
+    "create_time": 1781616406,
+    "update_time": 1781616406,
+    "_id": "Investigador"
+  },
+  "Informações_Abertas": {
+    "chunk_ids": [
+      "doc-3fb006401d6140fd918a731354a97feb-chunk-002"
+    ],
+    "count": 1,
+    "create_time": 1781616406,
+    "update_time": 1781616406,
+    "_id": "Informações_Abertas"
+  },
+  "Manual": {
+    "chunk_ids": [
+      "doc-3fb006401d6140fd918a731354a97feb-chunk-002"
+    ],
+    "count": 1,
+    "create_time": 1781616406,
+    "update_time": 1781616406,
+    "_id": "Manual"
+  },
+  "Ação_Penal": {
+    "chunk_ids": [
+      "doc-3fb006401d6140fd918a731354a97feb-chunk-002"
+    ],
+    "count": 1,
+    "create_time": 1781616406,
+    "update_time": 1781616406,
+    "_id": "Ação_Penal"
+  },
+  "Prof.Dr._Antonio_Magalhães_Gomes_Filho": {
+    "chunk_ids": [
+      "doc-3fb006401d6140fd918a731354a97feb-chunk-002"
+    ],
+    "count": 1,
+    "create_time": 1781616406,
+    "update_time": 1781616406,
+    "_id": "Prof.Dr._Antonio_Magalhães_Gomes_Filho"
+  },
+  "Grupo_de_Pesquisa_em_Justiça_Negociada_": {
+    "chunk_ids": [
+      "doc-3fb006401d6140fd918a731354a97feb-chunk-002"
+    ],
+    "count": 1,
+    "create_time": 1781616406,
+    "update_time": 1781616406,
+    "_id": "Grupo_de_Pesquisa_em_Justiça_Negociada_"
+  },
+  "Universidade_de_São_Paulo": {
+    "chunk_ids": [
+      "doc-3fb006401d6140fd918a731354a97feb-chunk-002"
+    ],
+    "count": 1,
+    "create_time": 1781616406,
+    "update_time": 1781616406,
+    "_id": "Universidade_de_São_Paulo"
+  },
+  "Lei 12.850/2013": {
+    "chunk_ids": [
+      "doc-3fb006401d6140fd918a731354a97feb-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1781616406,
+    "update_time": 1781616406,
+    "_id": "Lei 12.850/2013"
+  },
+  "Organização Criminosa": {
+    "chunk_ids": [
+      "doc-3fb006401d6140fd918a731354a97feb-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1781616406,
+    "update_time": 1781616406,
+    "_id": "Organização Criminosa"
+  },
+  "Colaboração Premiada": {
+    "chunk_ids": [
+      "doc-3fb006401d6140fd918a731354a97feb-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1781616406,
+    "update_time": 1781616406,
+    "_id": "Colaboração Premiada"
+  },
+  "Ação Controlada": {
+    "chunk_ids": [
+      "doc-3fb006401d6140fd918a731354a97feb-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1781616406,
+    "update_time": 1781616406,
+    "_id": "Ação Controlada"
+  },
+  "Interceptação Telefônica": {
+    "chunk_ids": [
+      "doc-3fb006401d6140fd918a731354a97feb-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1781616406,
+    "update_time": 1781616406,
+    "_id": "Interceptação Telefônica"
+  },
+  "Ministério Público": {
+    "chunk_ids": [
+      "doc-3fb006401d6140fd918a731354a97feb-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1781616406,
+    "update_time": 1781616406,
+    "_id": "Ministério Público"
+  },
+  "Polícia Federal": {
+    "chunk_ids": [
+      "doc-3fb006401d6140fd918a731354a97feb-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1781616406,
+    "update_time": 1781616406,
+    "_id": "Polícia Federal"
+  },
+  "STF": {
+    "chunk_ids": [
+      "doc-3fb006401d6140fd918a731354a97feb-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1781616406,
+    "update_time": 1781616406,
+    "_id": "STF"
+  },
+  "Min. Dias Toffoli": {
+    "chunk_ids": [
+      "doc-3fb006401d6140fd918a731354a97feb-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1781616406,
+    "update_time": 1781616406,
+    "_id": "Min. Dias Toffoli"
+  },
+  "HC 127.483": {
+    "chunk_ids": [
+      "doc-3fb006401d6140fd918a731354a97feb-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1781616406,
+    "update_time": 1781616406,
+    "_id": "HC 127.483"
+  },
+  "Vara Federal Curitiba": {
+    "chunk_ids": [
+      "doc-3fb006401d6140fd918a731354a97feb-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1781616406,
+    "update_time": 1781616406,
+    "_id": "Vara Federal Curitiba"
+  },
+  "Departamento de Inteligência Policial": {
+    "chunk_ids": [
+      "doc-3fb006401d6140fd918a731354a97feb-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1781616406,
+    "update_time": 1781616406,
+    "_id": "Departamento de Inteligência Policial"
+  },
+  "Operação Integração": {
+    "chunk_ids": [
+      "doc-3fb006401d6140fd918a731354a97feb-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1781616406,
+    "update_time": 1781616406,
+    "_id": "Operação Integração"
+  },
+  "Delegacia de Crimes Organizados": {
+    "chunk_ids": [
+      "doc-3fb006401d6140fd918a731354a97feb-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1781616406,
+    "update_time": 1781616406,
+    "_id": "Delegacia de Crimes Organizados"
+  },
+  "Juízo da 2ª Vara Criminal": {
+    "chunk_ids": [
+      "doc-3fb006401d6140fd918a731354a97feb-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1781616406,
+    "update_time": 1781616406,
+    "_id": "Juízo da 2ª Vara Criminal"
+  },
+  "Juízo da 13ª Vara Federal Criminal de Curitiba/PR": {
+    "chunk_ids": [
+      "doc-3fb006401d6140fd918a731354a97feb-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1781616406,
+    "update_time": 1781616406,
+    "_id": "Juízo da 13ª Vara Federal Criminal de Curitiba/PR"
+  },
+  "Ministério Público Federal": {
+    "chunk_ids": [
+      "doc-3fb006401d6140fd918a731354a97feb-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1781616406,
+    "update_time": 1781616406,
+    "_id": "Ministério Público Federal"
+  },
+  "Acordo de Colaboração Premiada": {
+    "chunk_ids": [
+      "doc-3fb006401d6140fd918a731354a97feb-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1781616406,
+    "update_time": 1781616406,
+    "_id": "Acordo de Colaboração Premiada"
+  },
+  "Sigilo Financeiro": {
+    "chunk_ids": [
+      "doc-3fb006401d6140fd918a731354a97feb-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1781616406,
+    "update_time": 1781616406,
+    "_id": "Sigilo Financeiro"
+  },
+  "Sigilo Bancário": {
+    "chunk_ids": [
+      "doc-3fb006401d6140fd918a731354a97feb-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1781616406,
+    "update_time": 1781616406,
+    "_id": "Sigilo Bancário"
+  },
+  "Sigilo Fiscal": {
+    "chunk_ids": [
+      "doc-3fb006401d6140fd918a731354a97feb-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1781616406,
+    "update_time": 1781616406,
+    "_id": "Sigilo Fiscal"
+  },
+  "Organização_Criminosa": {
+    "chunk_ids": [
+      "doc-3fb006401d6140fd918a731354a97feb-chunk-001"
+    ],
+    "count": 1,
+    "create_time": 1781616406,
+    "update_time": 1781616406,
+    "_id": "Organização_Criminosa"
+  },
+  "Convicção_Além_Dúvida": {
+    "chunk_ids": [
+      "doc-3fb006401d6140fd918a731354a97feb-chunk-002"
+    ],
+    "count": 1,
+    "create_time": 1781616406,
+    "update_time": 1781616406,
+    "_id": "Convicção_Além_Dúvida"
+  },
+  "Investigação": {
+    "chunk_ids": [
+      "doc-3fb006401d6140fd918a731354a97feb-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1781616406,
+    "update_time": 1781616406,
+    "_id": "Investigação"
+  },
+  "Homologação Judicial": {
+    "chunk_ids": [
+      "doc-3fb006401d6140fd918a731354a97feb-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1781616406,
+    "update_time": 1781616406,
+    "_id": "Homologação Judicial"
+  }
+}

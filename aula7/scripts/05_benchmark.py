@@ -45,14 +45,22 @@ PROMPT_COLOQUIAL = (
     'Responda em JSON: {{"pergunta": "...", "resposta": "..."}}\n\n{texto}'
 )
 PROMPT_TEMATICA = (
-    "Os trechos abaixo sao de varios acordaos do TCU sobre um tema parecido. Gere UMA "
-    "pergunta AMPLA/TEMATICA que so possa ser bem respondida SINTETIZANDO varios deles, "
-    "e uma resposta que resume o panorama. "
+    "Os trechos abaixo sao de varios acordaos do TCU sobre um MESMO tema. Gere UMA "
+    "pergunta que um CIDADAO LEIGO faria sobre esse tema, em LINGUAGEM COLOQUIAL, e uma "
+    "resposta que resume o panorama. REGRAS IMPORTANTES:\n"
+    "- NAO cite numeros de acordao (ex.: 1234/2026) nem nomes de orgaos especificos.\n"
+    "- NAO copie os termos tecnicos/juridicos dos trechos; use palavras do dia a dia.\n"
+    "- A pergunta deve ser sobre o TEMA geral (respondivel olhando varios casos), nao "
+    "sobre um caso especifico.\n"
     'Responda em JSON: {{"pergunta": "...", "resposta": "..."}}\n\n{trechos}'
 )
 
 
 def extrair_json(texto):
+    if not texto:
+        return None
+    # remove cercas de codigo (```json ... ```) que alguns modelos adicionam
+    texto = re.sub(r"```(?:json)?", "", texto).strip()
     try:
         return json.loads(texto)
     except Exception:
@@ -63,6 +71,27 @@ def extrair_json(texto):
             except Exception:
                 return None
     return None
+
+
+def limpar_query(q):
+    """Rede de seguranca: remove vazamentos de numero de acordao da pergunta gerada.
+
+    Mesmo pedindo no prompt, o LLM as vezes cita 'acordao 1234/2026'. Esses numeros
+    'vazam' a identidade dos documentos e tornam a busca trivial (mascarando o ganho
+    do enhancement). Aqui removemos os padroes NNNN/AAAA e expressoes 'com base no(s)
+    acordao(s) ...' e normalizamos espacos/pontuacao.
+    """
+    q = re.sub(r"\d{1,5}\s*/\s*\d{4}", "", q)               # numeros tipo 1234/2026
+    q = re.sub(r"(?i)\bn[ºo°]?\s*\d+\b", "", q)             # "nº 123"
+    q = re.sub(r"(?i)\bac[oó]rd[aã]os?\b", "casos", q)      # acordao(s) -> casos
+    q = re.sub(r"(?i)\bcom base (n|em)[^,.:;]*[,:]\s*", "", q)  # "com base nos casos ...,"
+    q = re.sub(r"\s{2,}", " ", q)
+    q = re.sub(r"\s+([,.;:?])", r"\1", q)
+    q = re.sub(r"[,;:]\s*([,.;:?])", r"\1", q)
+    q = q.strip(" ,;:-").strip()
+    q = re.sub(r"^(e|que|mas|pois)\b[,\s]*", "", q, flags=re.I)  # tira conjuncao inicial solta
+    q = q[:1].upper() + q[1:] if q else q
+    return q.strip()
 
 
 def gerar_benchmark(store, cliente, modelo, n, seed):
@@ -76,7 +105,7 @@ def gerar_benchmark(store, cliente, modelo, n, seed):
     for i, d in enumerate(amostra, 1):
         docid = d.meta.get("id_original")
         par = extrair_json(_comum.gerar_texto(cliente, modelo, PROMPT_COLOQUIAL.format(texto=d.content[:2500]),
-                                              max_tokens=300, temperature=0.4))
+                                              max_tokens=700, temperature=0.4))
         if par and "pergunta" in par and docid:
             benchmark.append({"id": f"BQ{i:03d}", "query": str(par["pergunta"]).strip(),
                               "documentos_relevantes": [docid],
@@ -89,11 +118,14 @@ def gerar_benchmark(store, cliente, modelo, n, seed):
     return benchmark
 
 
-def gerar_benchmark_multidoc(store, cliente, modelo, n, seed, por_cluster=3):
+def gerar_benchmark_multidoc(store, cliente, modelo, n, seed, por_cluster=3, rel_por_cluster=4):
     """Modo --multi-doc: n perguntas TEMATICAS, cada uma com VARIOS docs relevantes.
 
-    Agrupa os docs do indice por similaridade (KMeans) e, para cada cluster, gera
-    uma pergunta tematica que exige sintetizar os documentos daquele grupo.
+    Agrupa os docs do indice por similaridade (KMeans) e, para cada cluster, define o
+    GABARITO COESO = os 'rel_por_cluster' documentos MAIS PROXIMOS do centroide (tema
+    coerente). A pergunta tematica e gerada a partir dos 'por_cluster' docs mais
+    centrais. Gabarito coeso (em vez de 3 sementes soltas) evita recall artificialmente
+    baixo e permite que Multi-Query/RAG-Fusion mostrem ganho ao "lancar uma rede maior".
     """
     indexados = store.filter_documents()
     if not indexados:
@@ -104,22 +136,29 @@ def gerar_benchmark_multidoc(store, cliente, modelo, n, seed, por_cluster=3):
     docs_emb = _comum.doc_embedder().run(documents=amostra)["documents"]
     vetores = np.array([d.embedding for d in docs_emb], dtype="float32")
     k = max(2, min(n, len(amostra) // por_cluster))
-    rotulos = KMeans(n_clusters=k, n_init=10, random_state=seed).fit_predict(vetores)
+    km = KMeans(n_clusters=k, n_init=10, random_state=seed)
+    rotulos = km.fit_predict(vetores)
 
     benchmark = []
     for c in range(k):
-        membros = [amostra[j] for j in range(len(amostra)) if rotulos[j] == c][:por_cluster]
-        if len(membros) < 2:
+        idx = [j for j in range(len(amostra)) if rotulos[j] == c]
+        if len(idx) < 2:
             continue
-        trechos = "\n\n".join(m.content[:700] for m in membros)
+        # ordena os membros pela PROXIMIDADE ao centroide (mais coeso primeiro)
+        centro = km.cluster_centers_[c]
+        idx.sort(key=lambda j: float(np.linalg.norm(vetores[j] - centro)))
+        relevantes_idx = idx[:rel_por_cluster]          # gabarito coeso (rede do tema)
+        query_idx = idx[:min(por_cluster, len(idx))]    # docs centrais p/ gerar a pergunta
+        trechos = "\n\n".join(amostra[j].content[:700] for j in query_idx)
         par = extrair_json(_comum.gerar_texto(cliente, modelo, PROMPT_TEMATICA.format(trechos=trechos),
-                                              max_tokens=300, temperature=0.4))
+                                              max_tokens=700, temperature=0.4))
         if par and "pergunta" in par:
-            benchmark.append({"id": f"BT{c+1:03d}", "query": str(par["pergunta"]).strip(),
-                              "documentos_relevantes": [m.meta.get("id_original") for m in membros],
+            benchmark.append({"id": f"BT{c+1:03d}", "query": limpar_query(str(par["pergunta"])),
+                              "documentos_relevantes": [amostra[j].meta.get("id_original") for j in relevantes_idx],
                               "resposta_esperada": str(par.get("resposta", "")).strip(),
                               "tipo": "tematica"})
-        print(f"  cluster {c}: {len(membros)} docs -> {benchmark[-1]['query'][:55] if benchmark else '(falhou)'}")
+        print(f"  cluster {c}: {len(idx)} docs (gabarito={len(relevantes_idx)}) -> "
+              f"{benchmark[-1]['query'][:50] if benchmark else '(falhou)'}")
         if len(benchmark) >= n:
             break
     with open(BENCHMARK_MULTIDOC, "w", encoding="utf-8") as f:
@@ -169,6 +208,8 @@ def main():
     parser.add_argument("--variacoes", type=int, default=4)
     parser.add_argument("--multi-doc", action="store_true",
                         help="usa perguntas TEMATICAS com varios docs relevantes (clustering)")
+    parser.add_argument("--rel-por-cluster", type=int, default=4,
+                        help="tamanho do gabarito coeso por cluster (modo --multi-doc)")
     parser.add_argument("--gerar", action="store_true", help="forca regerar o benchmark do modo atual")
     parser.add_argument("--seed", type=int, default=42)
     args = parser.parse_args()
@@ -187,7 +228,8 @@ def main():
     if args.gerar or not arquivo.exists():
         print("Gerando o benchmark...")
         if args.multi_doc:
-            benchmark = gerar_benchmark_multidoc(store, cliente, modelo, args.n, args.seed)
+            benchmark = gerar_benchmark_multidoc(store, cliente, modelo, args.n, args.seed,
+                                                 rel_por_cluster=args.rel_por_cluster)
         else:
             benchmark = gerar_benchmark(store, cliente, modelo, args.n, args.seed)
     else:
@@ -201,6 +243,14 @@ def main():
         "Step-Back": busca_stepback,
         "RAG-Fusion": busca_ragfusion,
     }
+
+    if not benchmark:
+        print("\n[ERRO] O benchmark ficou VAZIO (o LLM nao gerou perguntas validas).")
+        print("Causas comuns: modelo de RACIOCINIO (ex.: gpt-oss) devolvendo content vazio,")
+        print("ou JSON malformado. Tente um modelo nao-reasoning no .env, por exemplo:")
+        print("   GROQ_LLM_MODEL=llama-3.3-70b-versatile   (ou llama-3.1-8b-instant)")
+        print("e rode novamente com --gerar.")
+        return
 
     rel_medio = sum(len(q["documentos_relevantes"]) for q in benchmark) / max(1, len(benchmark))
     print(f"\nRodando {len(estrategias)} estrategias em {len(benchmark)} perguntas "

@@ -13,6 +13,7 @@ Voce NAO executa este arquivo diretamente. Ele e importado pelos outros scripts.
 import importlib.util
 import json
 import os
+import re
 from pathlib import Path
 
 from dotenv import load_dotenv
@@ -32,6 +33,10 @@ def langfuse_configurado():
 
 
 def carregar_env():
+    import sys
+    if hasattr(sys.stdout, "reconfigure"):
+        sys.stdout.reconfigure(encoding="utf-8")
+
     caminho = None
     for c in [PASTA_PROJETO / ".env", PASTA_AULA7 / ".env", PASTA_SCRIPTS / ".env"]:
         if c.exists():
@@ -144,6 +149,8 @@ def montar_busca(store, top_k):
 
 def buscar(pipe, query):
     """Roda a busca densa para uma query e devolve a lista de Documents."""
+    if not query or not query.strip():
+        return []
     return pipe.run({"embedder": {"text": query}})["retriever"]["documents"]
 
 
@@ -154,12 +161,31 @@ def groq_client():
     return OpenAI(api_key=api_key, base_url=base_url), modelo
 
 
+def _eh_reasoning(modelo):
+    """Heuristica: o modelo e de 'raciocinio' (gasta tokens pensando)?"""
+    m = (modelo or "").lower()
+    return any(t in m for t in ["gpt-oss", "deepseek-r1", "qwq", "o1", "o3", "reason"])
+
+
 def gerar_texto(cliente, modelo, prompt, max_tokens=400, temperature=0.5):
-    resp = cliente.chat.completions.create(
-        model=modelo, messages=[{"role": "user", "content": prompt}],
-        temperature=temperature, max_tokens=max_tokens,
-    )
-    return resp.choices[0].message.content.strip()
+    """Chama o LLM e devolve o texto, robusto a modelos de RACIOCINIO.
+
+    Modelos de reasoning (ex.: gpt-oss) consomem o orcamento de tokens 'pensando' e,
+    com max_tokens baixo, devolvem content VAZIO. Aqui: pedimos reasoning_effort baixo,
+    damos folga de tokens, protegemos content None/"" e removemos blocos <think>.
+    """
+    kwargs = dict(model=modelo, messages=[{"role": "user", "content": prompt}],
+                  temperature=temperature, max_tokens=max_tokens)
+    if _eh_reasoning(modelo):
+        kwargs["max_tokens"] = max(max_tokens, 1024)
+        kwargs["extra_body"] = {"reasoning_effort": "low"}
+    try:
+        resp = cliente.chat.completions.create(**kwargs)
+    except Exception:
+        kwargs.pop("extra_body", None)  # SDK/endpoint sem suporte a reasoning_effort
+        resp = cliente.chat.completions.create(**kwargs)
+    conteudo = (resp.choices[0].message.content or "").strip()
+    return re.sub(r"<think>.*?</think>", "", conteudo, flags=re.DOTALL).strip()
 
 
 def gerar_variacoes(cliente, modelo, query, n=4):
@@ -175,7 +201,7 @@ def gerar_stepback(cliente, modelo, query):
     prompt = ("Dada a pergunta especifica abaixo, formule UMA pergunta mais GERAL sobre o "
               "conceito juridico por tras dela. Responda apenas com a pergunta geral.\n\n"
               f"Pergunta especifica: {query}")
-    return gerar_texto(cliente, modelo, prompt, max_tokens=100, temperature=0.3)
+    return gerar_texto(cliente, modelo, prompt, max_tokens=400, temperature=0.3)
 
 
 PROMPT_RESPOSTA = (
