@@ -2,6 +2,7 @@
   "doc-3fb006401d6140fd918a731354a97feb": {
     "relation_pairs": [
       [
+<<<<<<< HEAD
         "ANPP",
         "Colaboração_Premiada"
       ],
@@ -52,12 +53,65 @@
       [
         "Delegacia_Crimes_Organizados",
         "Operação_Integração"
+=======
+        "CNJ",
+        "Código_de_Processo_Penal"
+      ],
+      [
+        "Cadeia_de_Custódia",
+        "Perícia_Forense"
+      ],
+      [
+        "Empresas de Fachada",
+        "Organização Criminosa"
+      ],
+      [
+        "Prova_Indiciária",
+        "Raciocínio_Abdutivo"
+      ],
+      [
+        "Ação_Penal",
+        "Ministério_Público"
+      ],
+      [
+        "Departamento de Inteligência Policial",
+        "Operação Integração"
+      ],
+      [
+        "Lei 12.850/2013",
+        "Organização Criminosa"
+      ],
+      [
+        "Colaboração Premiada",
+        "Ministério Público"
+      ],
+      [
+        "Delegacia_Crimes_Organizados",
+        "Organização_Criminosa"
+      ],
+      [
+        "Charles_Sanders_Peirce",
+        "Raciocínio_Abdutivo"
+      ],
+      [
+        "Ferramentas_Forenses",
+        "Investigador"
+      ],
+      [
+        "CNJ",
+        "Prova_Digital"
+      ],
+      [
+        "Criptomoedas",
+        "Produto_Crime"
+>>>>>>> 5e8ed2c404e3b6f4d759590e6927cd5700783b5e
       ],
       [
         "ANPP",
         "Ação_Penal"
       ],
       [
+<<<<<<< HEAD
         "Ferrajoli",
         "Garantismo_Penal"
       ],
@@ -76,12 +130,93 @@
       [
         "Ferramentas_Forenses",
         "Perito"
+=======
+        "Ministério_da_Justiça",
+        "SENASP"
+      ],
+      [
+        "Delegacia de Crimes Organizados",
+        "Operação Integração"
+      ],
+      [
+        "Acordo de Colaboração",
+        "Homologação Judicial"
+      ],
+      [
+        "Grupo_de_Pesquisa_em_Justiça_Negociada",
+        "USP"
+      ],
+      [
+        "ANPP",
+        "Colaboração_Premiada"
+      ],
+      [
+        "HC 127.483",
+        "STF"
+      ],
+      [
+        "Departamento de Inteligência Policial",
+        "Infiltração"
+      ],
+      [
+        "Manual",
+        "SENASP"
+      ],
+      [
+        "Acordo de Colaboração",
+        "Ministério Público Federal"
+      ],
+      [
+        "ANPP",
+        "Lei_13964/2019"
+      ],
+      [
+        "Delegacia_Crimes_Organizados",
+        "Juízo_da_2ª_Vara_Criminal"
+      ],
+      [
+        "Convicção_Além_Dúvida",
+        "Standard_Probatório"
+      ],
+      [
+        "Ministério Público Federal",
+        "Vara Federal Curitiba"
+      ],
+      [
+        "Informações_Abertas",
+        "OSINT"
+      ],
+      [
+        "Marcos_Aurélio_Silva",
+        "TRF-4"
+      ],
+      [
+        "Autopsy",
+        "SENASP"
+      ],
+      [
+        "ANPP",
+        "Ministério_Público"
+      ],
+      [
+        "Marcos_Aurélio_Silva",
+        "Tráfico_Entorpecentes"
+      ],
+      [
+        "Criptomoedas",
+        "Organização Criminosa"
+      ],
+      [
+        "Criptomoedas",
+        "Marcos_Aurélio_Silva"
+>>>>>>> 5e8ed2c404e3b6f4d759590e6927cd5700783b5e
       ],
       [
         "Perito",
         "Relatório_Pericial"
       ],
       [
+<<<<<<< HEAD
         "Colaboração Premiada",
         "Ministério Público"
       ],
@@ -149,6 +284,23 @@
     "count": 36,
     "create_time": 1781805287,
     "update_time": 1781805287,
+=======
+        "Ministério_Justiça",
+        "SENASP"
+      ],
+      [
+        "Prof._Dr._Antonio_Magalhães_Gomes_Filho",
+        "Teoria_da_Prova"
+      ],
+      [
+        "Ferrajoli",
+        "Garantismo_Penal"
+      ]
+    ],
+    "count": 38,
+    "create_time": 1781805410,
+    "update_time": 1781805410,
+>>>>>>> 5e8ed2c404e3b6f4d759590e6927cd5700783b5e
     "_id": "doc-3fb006401d6140fd918a731354a97feb"
   }
 }
