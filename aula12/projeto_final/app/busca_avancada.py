@@ -20,7 +20,10 @@ from .log import obter_logger
 
 log = obter_logger(__name__)
 
-TECNICAS = ("baseline", "multi_query", "rag_fusion", "step_back")
+TECNICAS = ("baseline", "multi_query", "rag_fusion", "step_back", "hibrida", "rerank")
+
+MODELO_RERANKER = "BAAI/bge-reranker-v2-m3"
+TOP_K_CANDIDATOS_RERANK = 20  # recupera top-N antes de reranquear para top_k final
 
 # Os prompts (rag / variacoes / stepback) sao lidos EM RUNTIME de prompts.get_prompts(),
 # para refletirem o que o aluno editar na aba Configuracoes do Gradio.
@@ -106,8 +109,15 @@ class BuscarMultiplas:
 # ---------------------------------------------------------------------------
 # Builder do pipeline por tecnica
 # ---------------------------------------------------------------------------
-def construir(tecnica, top_k, pergunta):
-    """Monta o pipeline Haystack da tecnica e devolve (pipe, inputs, chave_dos_docs)."""
+def construir(tecnica, top_k, pergunta, apenas_recuperacao=False):
+    """Monta o pipeline Haystack da tecnica e devolve (pipe, inputs, chave_dos_docs).
+
+    `apenas_recuperacao=True` omite os nos de geracao final (prompt+llm) - usado pela
+    avaliacao de recuperacao (avaliacao/) para nao gastar uma chamada de LLM por
+    pergunta so para medir Hit@K/Recall@K/MRR/NDCG@K. As tecnicas que reescrevem a
+    consulta (multi_query/rag_fusion/step_back) continuam fazendo sua chamada de LLM
+    de reescrita normalmente, pois isso faz parte da propria tecnica de recuperacao.
+    """
     from haystack import Pipeline
     from haystack.components.builders import PromptBuilder
     from haystack.components.generators import OpenAIGenerator
@@ -131,18 +141,48 @@ def construir(tecnica, top_k, pergunta):
     if config.langfuse_configurado():
         from haystack_integrations.components.connectors.langfuse import LangfuseConnector
         pipe.add_component("tracer", LangfuseConnector(f"busca-{tecnica}-aula12"))
-    # geracao final (comum a todas as tecnicas)
-    pipe.add_component("prompt", PromptBuilder(template=p["rag"], required_variables="*"))
-    pipe.add_component("llm", novo_llm(0.2, 500))
-    pipe.connect("prompt.prompt", "llm.prompt")
+    if not apenas_recuperacao:
+        # geracao final (comum a todas as tecnicas)
+        pipe.add_component("prompt", PromptBuilder(template=p["rag"], required_variables="*"))
+        pipe.add_component("llm", novo_llm(0.2, 500))
+        pipe.connect("prompt.prompt", "llm.prompt")
+
+    def _saida(chave, inputs):
+        if not apenas_recuperacao:
+            pipe.connect(f"{chave}.documents", "prompt.documents")
+            inputs["prompt"] = {"pergunta": pergunta}
+        return pipe, inputs, chave
 
     if tecnica == "baseline":
         pipe.add_component("embedder", OllamaTextEmbedder(model=modelo_emb, url=base_ollama))
         pipe.add_component("retriever", OpenSearchEmbeddingRetriever(document_store=store, top_k=top_k))
         pipe.connect("embedder.embedding", "retriever.query_embedding")
-        pipe.connect("retriever.documents", "prompt.documents")
-        inputs = {"embedder": {"text": pergunta}, "prompt": {"pergunta": pergunta}}
-        return pipe, inputs, "retriever"
+        return _saida("retriever", {"embedder": {"text": pergunta}})
+
+    if tecnica == "hibrida":
+        # Busca hibrida BM25 (lexico) + densa (embedding), fundidas por RRF (Aula 4).
+        from haystack_integrations.components.retrievers.opensearch import OpenSearchHybridRetriever
+
+        pipe.add_component("hibrida", OpenSearchHybridRetriever(
+            document_store=store,
+            embedder=OllamaTextEmbedder(model=modelo_emb, url=base_ollama),
+            top_k_bm25=top_k, top_k_embedding=top_k, top_k=top_k,
+            join_mode="reciprocal_rank_fusion",
+        ))
+        return _saida("hibrida", {"hibrida": {"query": pergunta}})
+
+    if tecnica == "rerank":
+        # Recupera TOP_K_CANDIDATOS_RERANK candidatos densos e reordena com um
+        # cross-encoder (Aula 3), cortando para o top_k final.
+        from haystack.components.rankers import TransformersSimilarityRanker
+
+        pipe.add_component("embedder", OllamaTextEmbedder(model=modelo_emb, url=base_ollama))
+        pipe.add_component("retriever", OpenSearchEmbeddingRetriever(
+            document_store=store, top_k=TOP_K_CANDIDATOS_RERANK))
+        pipe.add_component("ranker", TransformersSimilarityRanker(model=MODELO_RERANKER, top_k=top_k))
+        pipe.connect("embedder.embedding", "retriever.query_embedding")
+        pipe.connect("retriever.documents", "ranker.documents")
+        return _saida("ranker", {"embedder": {"text": pergunta}, "ranker": {"query": pergunta}})
 
     # tecnicas com reescrita de query
     if tecnica == "step_back":
@@ -158,7 +198,4 @@ def construir(tecnica, top_k, pergunta):
     pipe.connect("rw_prompt.prompt", "rw_llm.prompt")
     pipe.connect("rw_llm.replies", "montar.textos")
     pipe.connect("montar.queries", "buscar.queries")
-    pipe.connect("buscar.documents", "prompt.documents")
-    inputs = {"rw_prompt": {"pergunta": pergunta}, "montar": {"question": pergunta},
-              "prompt": {"pergunta": pergunta}}
-    return pipe, inputs, "buscar"
+    return _saida("buscar", {"rw_prompt": {"pergunta": pergunta}, "montar": {"question": pergunta}})

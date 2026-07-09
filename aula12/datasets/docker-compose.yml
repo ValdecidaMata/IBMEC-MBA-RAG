@@ -20,7 +20,7 @@ services:
     container_name: opensearch
     environment:
       - discovery.type=single-node
-      - OPENSEARCH_INITIAL_ADMIN_PASSWORD=Admin@RAG1234!
+      - OPENSEARCH_INITIAL_ADMIN_PASSWORD=Ibmec@MBA2024!
       - plugins.security.disabled=true          # SOMENTE DESENVOLVIMENTO
       - OPENSEARCH_JAVA_OPTS=-Xms1g -Xmx1g
     volumes:

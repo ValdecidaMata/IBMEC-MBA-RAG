@@ -1,0 +1,40 @@
+{
+  "k": 10,
+  "resultados": [
+    {
+      "hit@10": 0.8182,
+      "recall@10": 0.7121,
+      "mrr": 0.5278,
+      "ndcg@10": 0.5308,
+      "auc": 0.9292,
+      "n_queries": 22,
+      "modelo": "nomic-embed-text",
+      "dim": 768,
+      "latencia_s": 22.02
+    },
+    {
+      "hit@10": 1.0,
+      "recall@10": 0.9848,
+      "mrr": 0.9356,
+      "ndcg@10": 0.9215,
+      "auc": 0.993,
+      "n_queries": 22,
+      "modelo": "bge-m3",
+      "dim": 1024,
+      "latencia_s": 29.53
+    },
+    {
+      "hit@10": 0.8182,
+      "recall@10": 0.7197,
+      "mrr": 0.5829,
+      "ndcg@10": 0.5433,
+      "auc": 0.9589,
+      "n_queries": 22,
+      "modelo": "mxbai-embed-large",
+      "dim": 1024,
+      "latencia_s": 22.68
+    }
+  ],
+  "melhor": "bge-m3",
+  "explicacao": "**Recomendado: bge-m3** — lidera o ranking (NDCG@10=0.9215), com Recall@10=0.9848 e AUC=0.993 (dim=1024, latencia=29.53s).\n\nPor familia de metrica:\n- Ranking (NDCG@10): melhor = **bge-m3** (o que ordena os relevantes mais no topo).\n- Recuperacao (Recall@10): melhor = **bge-m3** (traz mais relevantes no top-10).\n- Separabilidade (AUC): melhor = **bge-m3** (melhor separa relevante de nao-relevante).\n- Mais rapido: **nomic-embed-text** (22.02s).\n\nComo ler: se um modelo lidera NDCG e AUC, e o mais robusto para o dominio. Se outro empata na qualidade mas tem dimensao/latencia menor, pode compensar em producao."
+}

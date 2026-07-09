@@ -1,0 +1,7 @@
+{
+  "faithfulness": 0.9588385225885225,
+  "answer_relevancy": 0.8344580902512866,
+  "context_recall": 0.8484848484848484,
+  "llm_context_precision_with_reference": 0.8153409090359864,
+  "n_amostras": 22
+}

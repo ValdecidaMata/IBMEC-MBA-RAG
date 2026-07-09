@@ -1,6 +1,8 @@
 Roteiro/
 .claude/
 .venv/
+venv/
+**/venv/
 .env
 aula2/datasets/acordao-completo-2026.csv
 __pycache__/
@@ -9,5 +11,6 @@ __pycache__/
 aula9/rag_storage/
 aula9/server/rag_storage/
 aula12/projeto_final/rag_storage/
+aula12/projeto_final/rag_storage_backup_pre_fase7/
 *.png
 *.log

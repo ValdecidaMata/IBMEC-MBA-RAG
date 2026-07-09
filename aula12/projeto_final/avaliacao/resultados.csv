@@ -1,0 +1,20 @@
+exp,fase,mudanca,hit@5,recall@5,mrr,ndcg@10,ragas_faith,ragas_ans_rel,ragas_ctx_recall,latencia_s,custo,observacao
+exp01,Fase 0 - Baseline,"chunking=auto(hierarquico via Docling truncado), embedding=nomic-embed-text, top_k=5",0.1818,0.1364,0.0785,0.1148,,,,2.57,,Docling truncou extracao para 127k/698k chars (18%)
+exp02,Fase 1 - Extracao,extracao=PyMuPDF completo (698k/698k chars) em vez de Docling truncado (18%); chunking=auto(sentenca_janela); embedding=nomic-embed-text; top_k=5,0.4091,0.3485,0.2456,0.3133,,,,2.56,,Corrige truncamento por std::bad_alloc do Docling (paginas 82-164)
+exp02b,Fase 1 - Extracao (isolado),"extracao=PyMuPDF completo, chunking=hierarquico FORCADO (igual ao Fase 0, para isolar so o efeito da extracao); embedding=nomic-embed-text; top_k=5",0.3182,0.2879,0.2261,0.2984,,,,2.58,,Comparacao controlada 1-variavel com exp01
+exp_chunk_fixo,Fase 2 - Chunking,"chunking=fixo (forcado), extracao=PyMuPDF completo, embedding=nomic-embed-text, top_k=5",0.5,0.447,0.3415,0.4166,,,,2.57,,
+exp_chunk_recursivo,Fase 2 - Chunking,"chunking=recursivo (forcado), extracao=PyMuPDF completo, embedding=nomic-embed-text, top_k=5",0.5,0.3939,0.3438,0.403,,,,2.57,,
+exp_chunk_sentenca_janela,Fase 2 - Chunking,"chunking=sentenca_janela (forcado), extracao=PyMuPDF completo, embedding=nomic-embed-text, top_k=5",0.4091,0.3485,0.2456,0.3133,,,,2.57,,
+exp_chunk_semantico,Fase 2 - Chunking,"chunking=semantico (forcado), extracao=PyMuPDF completo, embedding=nomic-embed-text, top_k=5",0.3182,0.2348,0.2087,0.256,,,,2.59,,
+exp_chunk_hierarquico,Fase 2 - Chunking,"chunking=hierarquico (forcado), extracao=PyMuPDF completo, embedding=nomic-embed-text, top_k=5",0.3182,0.2879,0.2261,0.2984,,,,2.59,,
+exp03,Fase 3 - Embedding,"embedding=bge-m3 (vencedor bench_embeddings NDCG@10=0.92 vs nomic 0.53/mxbai 0.54), chunking=fixo, top_k=5",0.8182,0.7273,0.6458,0.7045,,,,2.71,,Reindexado com bge-m3; melhor config ate aqui
+exp04_hibrida,Fase 4 - Hibrida BM25+RRF,"tecnica=hibrida (OpenSearchHybridRetriever, BM25+denso, RRF), chunking=fixo, embedding=bge-m3, top_k=5",0.8636,0.7348,0.6788,0.7089,,,,2.78,,Nova tecnica implementada em busca_avancada.py
+exp04_topk3_real,Fase 4 - top_k (retrieval real),"top_k=3 (retrieval real, Hit@3/Recall@3/NDCG@3), chunking=fixo, embedding=bge-m3",0.7273,0.6439,0.6061,0.6374,,,,2.79,,metricas calculadas em @3 (nao @5/@10 fixos)
+exp04_topk5_real,Fase 4 - top_k (retrieval real),"top_k=5 (retrieval real, Hit@5/Recall@5/NDCG@5), chunking=fixo, embedding=bge-m3",0.8182,0.7273,0.6288,0.6663,,,,2.63,,metricas calculadas em @5 (nao @5/@10 fixos)
+exp04_topk10_real,Fase 4 - top_k (retrieval real),"top_k=10 (retrieval real, Hit@10/Recall@10/NDCG@10), chunking=fixo, embedding=bge-m3",0.9545,0.8864,0.6458,0.7045,,,,2.62,,metricas calculadas em @10 (nao @5/@10 fixos)
+exp05_multi_query,Fase 5 - Query enhancement,"tecnica=multi_query, chunking=fixo, embedding=bge-m3, top_k=5",0.8182,0.7121,0.5996,0.6687,,,,4.5,,
+exp05_rag_fusion,Fase 5 - Query enhancement,"tecnica=rag_fusion, chunking=fixo, embedding=bge-m3, top_k=5",0.7727,0.6515,0.5522,0.6408,,,,4.37,,
+exp05_step_back,Fase 5 - Query enhancement,"tecnica=step_back, chunking=fixo, embedding=bge-m3, top_k=5",0.8182,0.7273,0.6201,0.6963,,,,3.54,,
+exp06_rerank,Fase 6 - Reranking,"tecnica=rerank (top-20 denso -> TransformersSimilarityRanker bge-reranker-v2-m3 -> top-5), chunking=fixo, embedding=bge-m3",0.9091,0.7879,0.8333,0.835,,,,16.17,,Pipeline cacheado corretamente (1 warm_up so)
+exp08_baseline,Fase 8 - RAGAS,"tecnica=baseline (chunking=fixo, embedding=bge-m3, top_k=5)",,,,,0.9369,0.8128,0.8561,,,ctx_precision_ref=0.8232
+exp08_rerank,Fase 8 - RAGAS,"tecnica=rerank (melhor config: top-20 denso -> bge-reranker-v2-m3 -> top-5), chunking=fixo, embedding=bge-m3",,,,,0.9588,0.8345,0.8485,,,ctx_precision_ref=0.8153
