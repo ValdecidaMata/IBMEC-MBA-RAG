@@ -15,3 +15,4 @@ aula12/projeto_final/rag_storage/
 aula12/projeto_final/rag_storage_backup_pre_fase7/
 *.png
 *.log
+windows_ca_bundle.pem
